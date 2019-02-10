@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on JamsBlocKK</title>
-    <link>https://example.org/about/</link>
+    <link>https://jamesblockk.github.io/about/</link>
     <description>Recent content in About on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Wed, 10 Jan 2018 21:49:20 +0200</lastBuildDate>
     
-	<atom:link href="https://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jamesblockk.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
