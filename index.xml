@@ -6,10 +6,24 @@
     <description>Recent content on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 10 Jan 2019 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo automatically deploy makefile</title>
+      <link>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</link>
+      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</guid>
+      <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;
+
+&lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈
+makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
+
+&lt;p&gt;之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hello World</title>

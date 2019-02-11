@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on JamsBlocKK</title>
-    <link>https://jamesblockk.github.io/post/</link>
-    <description>Recent content in Posts on JamsBlocKK</description>
+    <title>Website on JamsBlocKK</title>
+    <link>https://jamesblockk.github.io/tags/website/</link>
+    <description>Recent content in Website on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate>
     
-	<atom:link href="https://jamesblockk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jamesblockk.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,15 +23,6 @@
 makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
 
 &lt;p&gt;之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://jamesblockk.github.io/2019/01/10/hello-world/</link>
-      <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/2019/01/10/hello-world/</guid>
-      <description>Hello World !!~ :)))</description>
     </item>
     
   </channel>

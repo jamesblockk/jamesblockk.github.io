@@ -6,17 +6,35 @@
     <description>Recent content in Tags on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 10 Jan 2019 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Smalltalk</title>
-      <link>https://jamesblockk.github.io/tags/smalltalk/</link>
+      <title>Hugo</title>
+      <link>https://jamesblockk.github.io/tags/hugo/</link>
+      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talk</title>
+      <link>https://jamesblockk.github.io/tags/talk/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/tags/smalltalk/</guid>
+      <guid>https://jamesblockk.github.io/tags/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://jamesblockk.github.io/tags/website/</link>
+      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/tags/website/</guid>
       <description></description>
     </item>
     

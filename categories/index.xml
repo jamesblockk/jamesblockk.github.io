@@ -11,11 +11,20 @@
     
     
     <item>
-      <title>Music</title>
-      <link>https://jamesblockk.github.io/categories/music/</link>
+      <title>Hugo</title>
+      <link>https://jamesblockk.github.io/categories/hugo/</link>
+      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smalltalk</title>
+      <link>https://jamesblockk.github.io/categories/smalltalk/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/music/</guid>
+      <guid>https://jamesblockk.github.io/categories/smalltalk/</guid>
       <description></description>
     </item>
     
