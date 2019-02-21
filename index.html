@@ -28,7 +28,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jamesblockk.github.io/" />
 
-<meta property="og:updated_time" content="2019-01-11T21:49:20&#43;02:00"/>
+<meta property="og:updated_time" content="2019-02-20T21:49:20&#43;02:00"/>
 
     
     
@@ -164,12 +164,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        2
+        4
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          3
+          8
         
         <span>
             Tags
@@ -245,6 +245,308 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/">
+    <h1 class="article-title" itemprop="name">
+        使用docker 開始 rocket chat
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-02-20 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-02-20</time>
+            &middot;
+            54
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/categories/chat">chat</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/rocket.chat">rocket.chat</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/chat">chat</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/docker">docker</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>rocket chat start</p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" data-id="24e4e516e4ba01c07a600036f8db0bbc" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/">
+    <h1 class="article-title" itemprop="name">
+        使用minikube 玩轉 k8s
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-02-18 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-02-18</time>
+            &middot;
+            87
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/categories/k8s">k8s</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/kubernetes">kubernetes</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/minikube">minikube</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>local 端的 單點 node  k8s 入門工具</p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" data-id="dc3f0faa17f242b14a2bb1825a024ecb" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -568,6 +870,58 @@ makefile 檔案 記得放在 website-hugo 的第一層</p>
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/chat">
+                        chat
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" class="title">使用docker 開始 rocket chat</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-02-20 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-02-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/k8s">
+                        k8s
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" class="title">使用minikube 玩轉 k8s</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-02-18 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-02-18</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
@@ -633,8 +987,24 @@ makefile 檔案 記得放在 website-hugo 的第一層</p>
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/chat">
+                    chat
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://jamesblockk.github.io/categories/hugo">
                     hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/k8s">
+                    k8s
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -666,8 +1036,48 @@ makefile 檔案 記得放在 website-hugo 的第一層</p>
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/chat">
+                    chat
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/docker">
+                    docker
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://jamesblockk.github.io/tags/hugo">
                     hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/kubernetes">
+                    kubernetes
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/minikube">
+                    minikube
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/rocket.chat">
+                    rocket.chat
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -705,7 +1115,22 @@ makefile 檔案 記得放在 website-hugo 的第一層</p>
     <div class="widget tagcloud">
         
         
+        <a href="https://jamesblockk.github.io/tags/chat" style="font-size: 12px;">chat</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/docker" style="font-size: 12px;">docker</a>
+        
+        
         <a href="https://jamesblockk.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/kubernetes" style="font-size: 12px;">kubernetes</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/minikube" style="font-size: 12px;">minikube</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/rocket.chat" style="font-size: 12px;">rocket.chat</a>
         
         
         <a href="https://jamesblockk.github.io/tags/talk" style="font-size: 12px;">talk</a>
