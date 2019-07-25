@@ -6,10 +6,20 @@
     <description>Recent content in Posts on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 17 Mar 2019 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用 docker 常用指令大彙整</title>
+      <link>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</link>
+      <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</guid>
+      <description>進入容器 在使用 -d 參數時，容器啟動後會進入背景執行
+進入容器 : $ sudo docker exec -ti #(image_name) bash</description>
+    </item>
     
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>
