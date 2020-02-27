@@ -6,19 +6,10 @@
     <description>Recent content in golang on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>使用 redis 建立 分佈式鎖</title>
-      <link>https://jamesblockk.github.io/2020/02/26/%E4%BD%BF%E7%94%A8-redis-%E5%BB%BA%E7%AB%8B-%E5%88%86%E4%BD%88%E5%BC%8F%E9%8E%96/</link>
-      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/2020/02/26/%E4%BD%BF%E7%94%A8-redis-%E5%BB%BA%E7%AB%8B-%E5%88%86%E4%BD%88%E5%BC%8F%E9%8E%96/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>

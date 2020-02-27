@@ -6,19 +6,10 @@
     <description>Recent content in Categories on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>golang</title>
-      <link>https://jamesblockk.github.io/categories/golang/</link>
-      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/golang/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>docker</title>
@@ -26,6 +17,15 @@
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
       <guid>https://jamesblockk.github.io/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://jamesblockk.github.io/categories/golang/</link>
+      <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
