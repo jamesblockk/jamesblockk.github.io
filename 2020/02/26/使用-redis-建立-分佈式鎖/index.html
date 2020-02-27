@@ -32,7 +32,7 @@
 <meta itemprop="description" content="">
 <meta itemprop="datePublished" content="2020-02-26T21:49:20&#43;02:00" />
 <meta itemprop="dateModified" content="2020-02-26T21:49:20&#43;02:00" />
-<meta itemprop="wordCount" content="61">
+<meta itemprop="wordCount" content="63">
 
 
 
@@ -264,7 +264,7 @@
             <i class="fa fa-calendar"></i>
             <time datetime="2020-02-26 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2020-02-26</time>
             &middot;
-            61
+            63
             words
             &middot;
             1
@@ -315,37 +315,38 @@
 
         <div class="article-entry" itemprop="articleBody">
             <p>使用 url 初始化</p>
-<pre><code>    rdslock.InitURL(&quot;redis://127.0.0.1:6379&quot;)
-</code></pre><p>使用已有連線 初始化 rdslock</p>
-<pre><code>    client := redis.NewClient(&amp;redis.Options{
-	    Addr:     &quot;127.0.0.1:6379&quot;,
-		Password: &quot;&quot;,
-	    DB:       0,
-	})
+<pre><code>rdslock.InitURL(&quot;redis://127.0.0.1:6379&quot;)
+</code></pre>
+<p>使用已有連線 初始化 rdslock</p>
+<pre><code>client := redis.NewClient(&amp;redis.Options{
+    Addr:     &quot;127.0.0.1:6379&quot;,
+    Password: &quot;&quot;,
+    DB:       0,
+})
 
-	rdslock.InitAssigned(client)
-    
-</code></pre><p>在分佈式系統 執行一次的作法</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang">    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">key</span> = <span style="color:#e6db74">&#34;LOCK_TEST_KEY&#34;</span>
+rdslock.InitAssigned(client)
+</code></pre>
+<p>在分佈式系統 執行一次的作法</p>
+<pre><code>const key = &quot;LOCK_TEST_KEY&quot;
 
-    <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">rdslock</span>.<span style="color:#a6e22e">Lock</span>(<span style="color:#a6e22e">key</span>, <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span> )
-	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-		println(<span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">Error</span>())
-		<span style="color:#66d9ef">return</span>
-	}
-    println(<span style="color:#e6db74">&#34;lock success  ... &#34;</span>)
-    
-	<span style="color:#a6e22e">do</span> <span style="color:#a6e22e">something</span> <span style="color:#f92672">...</span>.
+err := rdslock.Lock(key, 5 * time.Second )
+if err != nil {
+    println(err.Error())
+    return
+}
+println(&quot;lock success  ... &quot;)
 
-	<span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">rdslock</span>.<span style="color:#a6e22e">UnLock</span>(<span style="color:#a6e22e">key</span>)
-	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-		println(<span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">Error</span>())
-		<span style="color:#66d9ef">return</span>
-	} 
-    
-    println(<span style="color:#e6db74">&#34;unlock success ...&#34;</span>)
-    
-</code></pre></div><p><a href="https://github.com/jamesblockk/rdslock">package</a></p>
+do something ....
+
+err = rdslock.UnLock(key)
+if err != nil {
+    println(err.Error())
+    return
+} 
+
+println(&quot;unlock success ...&quot;)
+</code></pre>
+<p><a href="https://github.com/jamesblockk/rdslock">rdslock package</a> <a href="https://github.com/jamesblockk/rdslock">https://github.com/jamesblockk/rdslock</a></p>
         </div>
         <footer class="article-footer">
     <a data-url="https://jamesblockk.github.io/2020/02/26/%E4%BD%BF%E7%94%A8-redis-%E5%BB%BA%E7%AB%8B-%E5%88%86%E4%BD%88%E5%BC%8F%E9%8E%96/" data-id="11190c28f316f06d84c5670ad63719f7" class="article-share-link">
