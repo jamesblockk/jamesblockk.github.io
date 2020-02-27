@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Smalltalk on JamsBlocKK</title>
+    <title>smalltalk on JamsBlocKK</title>
     <link>https://jamesblockk.github.io/categories/smalltalk/</link>
-    <description>Recent content in Smalltalk on JamsBlocKK</description>
+    <description>Recent content in smalltalk on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Thu, 10 Jan 2019 21:49:20 +0200</lastBuildDate>

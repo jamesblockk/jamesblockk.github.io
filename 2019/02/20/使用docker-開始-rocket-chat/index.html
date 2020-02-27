@@ -2,7 +2,7 @@
 <html lang="zh-tw">
 <head>
     <title>使用docker 開始 rocket chat!! &middot; JamsBlocKK</title>
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.65.3" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="JamsBlocKK">
@@ -24,15 +24,12 @@
 <meta property="og:description" content="rocket chat start" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" />
-<meta property="article:published_time" content="2019-02-20T21:49:20&#43;02:00"/>
-<meta property="article:modified_time" content="2019-02-20T21:49:20&#43;02:00"/>
+<meta property="article:published_time" content="2019-02-20T21:49:20+02:00" />
+<meta property="article:modified_time" content="2019-02-20T21:49:20+02:00" />
 
     
-    
-<meta itemprop="name" content="使用docker 開始 rocket chat!!">
+    <meta itemprop="name" content="使用docker 開始 rocket chat!!">
 <meta itemprop="description" content="rocket chat start">
-
-
 <meta itemprop="datePublished" content="2019-02-20T21:49:20&#43;02:00" />
 <meta itemprop="dateModified" content="2019-02-20T21:49:20&#43;02:00" />
 <meta itemprop="wordCount" content="54">
@@ -40,7 +37,6 @@
 
 
 <meta itemprop="keywords" content="rocket.chat,chat,docker," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用docker 開始 rocket chat!!"/>
 <meta name="twitter:description" content="rocket chat start"/>
@@ -169,7 +165,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        6
+        7
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -315,51 +311,32 @@
 
         <div class="article-entry" itemprop="articleBody">
             <p>rocket chat start</p>
-
 <p>測試環境 : macOS</p>
-
 <p><a href="https://rocket.chat/">reference</a></p>
-
 <p><a href="https://github.com/RocketChat/Rocket.Chat/">源碼</a></p>
-
 <pre><code>＄git clone https://github.com/RocketChat/Rocket.Chat
 ＄cd Rocket.Chat
 </code></pre>
-
 <p>通過以下方式啟動mongodb服務器：</p>
-
 <pre><code>$docker-compose up -d mongo
 </code></pre>
-
 <p>第一次啟動mongo時，你還需要初始化它才能使用Rocket.Chat。確保mongo處於運行狀態，然後：</p>
-
 <pre><code>$docker-compose up -d mongo-init-replica
 </code></pre>
-
 <p>Mongo支持24 x 7操作和實時備份。您不需要太頻繁地重新啟動它。有關mongo服務器的正確操作和管理，請參閱 mongodb文檔。</p>
-
 <p>一旦你確定mongodb啟動並運行：</p>
-
 <pre><code>$docker-compose up -d rocketchat
 </code></pre>
-
 <p>在瀏覽器中進入 localhost:3000 就可以看到畫面</p>
-
-<hr />
-
+<hr>
 <p>mongo</p>
-
 <p>進入 mongodb 中</p>
-
 <pre><code>$docker exec -it rocketchat_mongo_1 mongo  --authenticationDatabase admin
 </code></pre>
-
 <p>查看 db</p>
-
 <pre><code>$show dbs
 $use rocketchat
-$show collections
-</code></pre>
+$show collections</code></pre>
         </div>
         <footer class="article-footer">
     <a data-url="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" data-id="24e4e516e4ba01c07a600036f8db0bbc" class="article-share-link">
@@ -854,7 +831,7 @@ $show collections
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019
+      &copy; 2020
       Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
     </div>
   </div>

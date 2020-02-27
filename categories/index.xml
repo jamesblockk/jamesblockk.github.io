@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on JamsBlocKK</title>
@@ -6,12 +6,13 @@
     <description>Recent content in Categories on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Docker</title>
+      <title>docker</title>
       <link>https://jamesblockk.github.io/categories/docker/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
@@ -20,7 +21,7 @@
     </item>
     
     <item>
-      <title>Golang</title>
+      <title>golang</title>
       <link>https://jamesblockk.github.io/categories/golang/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
       
@@ -29,25 +30,7 @@
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>https://jamesblockk.github.io/categories/hugo/</link>
-      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>K8s</title>
-      <link>https://jamesblockk.github.io/categories/k8s/</link>
-      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/k8s/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rocket.chat</title>
+      <title>rocket.chat</title>
       <link>https://jamesblockk.github.io/categories/rocket.chat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
@@ -56,7 +39,25 @@
     </item>
     
     <item>
-      <title>Smalltalk</title>
+      <title>k8s</title>
+      <link>https://jamesblockk.github.io/categories/k8s/</link>
+      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/categories/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://jamesblockk.github.io/categories/hugo/</link>
+      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smalltalk</title>
       <link>https://jamesblockk.github.io/categories/smalltalk/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
