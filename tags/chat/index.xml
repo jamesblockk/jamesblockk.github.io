@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>chat on JamsBlocKK</title>
+    <title>chat on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/tags/chat/</link>
-    <description>Recent content in chat on JamsBlocKK</description>
+    <description>Recent content in chat on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 20 Feb 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/tags/chat/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>使用docker 開始 rocket chat!!</title>
-      <link>https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/</link>
+      <link>https://jamesblockk.github.io/post/docker/rocketchat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/</guid>
+      <guid>https://jamesblockk.github.io/post/docker/rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
     

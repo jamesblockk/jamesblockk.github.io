@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>website on JamsBlocKK</title>
+    <title>website on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/tags/website/</link>
-    <description>Recent content in website on JamsBlocKK</description>
+    <description>Recent content in website on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>Hugo automatically deploy makefile</title>
-      <link>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</link>
+      <link>https://jamesblockk.github.io/post/golang/makefile/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</guid>
+      <guid>https://jamesblockk.github.io/post/golang/makefile/</guid>
       <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;
 &lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈
 makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;

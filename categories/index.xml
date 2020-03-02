@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on JamsBlocKK</title>
+    <title>Categories on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/categories/</link>
-    <description>Recent content in Categories on JamsBlocKK</description>
+    <description>Recent content in Categories on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -30,15 +30,6 @@
     </item>
     
     <item>
-      <title>rocket.chat</title>
-      <link>https://jamesblockk.github.io/categories/rocket.chat/</link>
-      <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/rocket.chat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>k8s</title>
       <link>https://jamesblockk.github.io/categories/k8s/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
@@ -48,20 +39,11 @@
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://jamesblockk.github.io/categories/hugo/</link>
-      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>smalltalk</title>
-      <link>https://jamesblockk.github.io/categories/smalltalk/</link>
+      <title>life</title>
+      <link>https://jamesblockk.github.io/categories/life/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/smalltalk/</guid>
+      <guid>https://jamesblockk.github.io/categories/life/</guid>
       <description></description>
     </item>
     
