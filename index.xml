@@ -22,10 +22,10 @@
     
     <item>
       <title>使用 docker 常用指令大彙整</title>
-      <link>https://jamesblockk.github.io/post/docker/docker_info/</link>
+      <link>https://jamesblockk.github.io/post/cicd/docker_info/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/docker/docker_info/</guid>
+      <guid>https://jamesblockk.github.io/post/cicd/docker_info/</guid>
       <description>&lt;p&gt;容器化 docker  時代&lt;/p&gt;</description>
     </item>
     
@@ -41,19 +41,19 @@
     
     <item>
       <title>使用docker 開始 rocket chat!!</title>
-      <link>https://jamesblockk.github.io/post/docker/rocketchat/</link>
+      <link>https://jamesblockk.github.io/post/service/rocketchat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/docker/rocketchat/</guid>
+      <guid>https://jamesblockk.github.io/post/service/rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用minikube 玩轉 k8s</title>
-      <link>https://jamesblockk.github.io/post/k8s/minikube/</link>
+      <link>https://jamesblockk.github.io/post/cicd/minikube/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/k8s/minikube/</guid>
+      <guid>https://jamesblockk.github.io/post/cicd/minikube/</guid>
       <description>&lt;p&gt;local 端的 單點 node  k8s 入門工具&lt;/p&gt;</description>
     </item>
     

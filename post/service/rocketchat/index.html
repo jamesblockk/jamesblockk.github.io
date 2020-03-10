@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="使用 redis 建立 分佈式鎖" />
-    <meta property="og:title" content="使用 redis 建立 分佈式鎖" />
-    <meta property="twitter:title" content="使用 redis 建立 分佈式鎖" />
+    <meta name="title" content="使用docker 開始 rocket chat!!" />
+    <meta property="og:title" content="使用docker 開始 rocket chat!!" />
+    <meta property="twitter:title" content="使用docker 開始 rocket chat!!" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="golang, PaaS, docker, Kubernetes, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>使用 redis 建立 分佈式鎖-JamesBlockk Blog</title>
+    <title>使用docker 開始 rocket chat!!-JamesBlockk Blog</title>
 
-    <link rel="canonical" href="/post/golang/lock/">
+    <link rel="canonical" href="/post/service/rocketchat/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -181,24 +181,16 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/golang" title="golang">
-                            golang
+                        <a class="tag" href="/tags/docker" title="docker">
+                            docker
                         </a>
                         
-                        <a class="tag" href="/tags/go-redis" title="go-redis">
-                            go-redis
-                        </a>
-                        
-                        <a class="tag" href="/tags/redis" title="redis">
-                            redis
-                        </a>
-                        
-                        <a class="tag" href="/tags/lock" title="lock">
-                            lock
+                        <a class="tag" href="/tags/chat" title="chat">
+                            chat
                         </a>
                         
                     </div>
-                    <h1>使用 redis 建立 分佈式鎖</h1>
+                    <h1>使用docker 開始 rocket chat!!</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -206,7 +198,7 @@
                                 JamsBlocKK Blog
                          
                         on 
-                        Wednesday, February 26, 2020
+                        Wednesday, February 20, 2019
                         
                         
                         
@@ -236,42 +228,33 @@
                 </header>
                 <nav id="TableOfContents"></nav>
                 
-                <p>引入套件</p>
-<pre><code>import &quot;github.com/jamesblockk/rdslock&quot;
+                <p>rocket chat start</p>
+<p>測試環境 : macOS</p>
+<p><a href="https://rocket.chat/">reference</a></p>
+<p><a href="https://github.com/RocketChat/Rocket.Chat/">源碼</a></p>
+<pre><code>＄git clone https://github.com/RocketChat/Rocket.Chat
+＄cd Rocket.Chat
 </code></pre>
-<p>使用 url 初始化</p>
-<pre><code>rdslock.InitURL(&quot;redis://127.0.0.1:6379&quot;)
+<p>通過以下方式啟動mongodb服務器：</p>
+<pre><code>$docker-compose up -d mongo
 </code></pre>
-<p>使用已有連線 初始化 rdslock</p>
-<pre><code>client := redis.NewClient(&amp;redis.Options{
-    Addr:     &quot;127.0.0.1:6379&quot;,
-    Password: &quot;&quot;,
-    DB:       0,
-})
-
-rdslock.InitAssigned(client)
+<p>第一次啟動mongo時，你還需要初始化它才能使用Rocket.Chat。確保mongo處於運行狀態，然後：</p>
+<pre><code>$docker-compose up -d mongo-init-replica
 </code></pre>
-<p>在分佈式系統 執行一次的作法</p>
-<pre><code>const key = &quot;LOCK_TEST_KEY&quot;
-
-err := rdslock.Lock(key, 5 * time.Second )
-if err != nil {
-    println(err.Error())
-    return
-}
-println(&quot;lock success  ... &quot;)
-
-do something ....
-
-err = rdslock.UnLock(key)
-if err != nil {
-    println(err.Error())
-    return
-} 
-
-println(&quot;unlock success ...&quot;)
+<p>Mongo支持24 x 7操作和實時備份。您不需要太頻繁地重新啟動它。有關mongo服務器的正確操作和管理，請參閱 mongodb文檔。</p>
+<p>一旦你確定mongodb啟動並運行：</p>
+<pre><code>$docker-compose up -d rocketchat
 </code></pre>
-<p><a href="https://github.com/jamesblockk/rdslock">rdslock package</a></p>
+<p>在瀏覽器中進入 localhost:3000 就可以看到畫面</p>
+<hr>
+<p>mongo</p>
+<p>進入 mongodb 中</p>
+<pre><code>$docker exec -it rocketchat_mongo_1 mongo  --authenticationDatabase admin
+</code></pre>
+<p>查看 db</p>
+<pre><code>$show dbs
+$use rocketchat
+$show collections</code></pre>
 
                 
                 
@@ -294,10 +277,15 @@ println(&quot;unlock success ...&quot;)
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/cicd/docker_info/" data-toggle="tooltip" data-placement="top" title="使用 docker 常用指令大彙整">&larr;
+                        <a href="/post/cicd/minikube/" data-toggle="tooltip" data-placement="top" title="使用minikube 玩轉 k8s">&larr;
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/golang/gomobile/" data-toggle="tooltip" data-placement="top" title="使用 gomobile 來建立前端共同的核心物件">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
 

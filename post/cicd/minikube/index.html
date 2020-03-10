@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="使用 redis 建立 分佈式鎖" />
-    <meta property="og:title" content="使用 redis 建立 分佈式鎖" />
-    <meta property="twitter:title" content="使用 redis 建立 分佈式鎖" />
+    <meta name="title" content="使用minikube 玩轉 k8s" />
+    <meta property="og:title" content="使用minikube 玩轉 k8s" />
+    <meta property="twitter:title" content="使用minikube 玩轉 k8s" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="golang, PaaS, docker, Kubernetes, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>使用 redis 建立 分佈式鎖-JamesBlockk Blog</title>
+    <title>使用minikube 玩轉 k8s-JamesBlockk Blog</title>
 
-    <link rel="canonical" href="/post/golang/lock/">
+    <link rel="canonical" href="/post/cicd/minikube/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -181,24 +181,16 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/golang" title="golang">
-                            golang
+                        <a class="tag" href="/tags/kubernetes" title="kubernetes">
+                            kubernetes
                         </a>
                         
-                        <a class="tag" href="/tags/go-redis" title="go-redis">
-                            go-redis
-                        </a>
-                        
-                        <a class="tag" href="/tags/redis" title="redis">
-                            redis
-                        </a>
-                        
-                        <a class="tag" href="/tags/lock" title="lock">
-                            lock
+                        <a class="tag" href="/tags/minikube" title="minikube">
+                            minikube
                         </a>
                         
                     </div>
-                    <h1>使用 redis 建立 分佈式鎖</h1>
+                    <h1>使用minikube 玩轉 k8s</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -206,7 +198,7 @@
                                 JamsBlocKK Blog
                          
                         on 
-                        Wednesday, February 26, 2020
+                        Monday, February 18, 2019
                         
                         
                         
@@ -236,42 +228,52 @@
                 </header>
                 <nav id="TableOfContents"></nav>
                 
-                <p>引入套件</p>
-<pre><code>import &quot;github.com/jamesblockk/rdslock&quot;
+                <p>local 端的 單點 node  k8s 入門工具</p>
+<p>macOS 使用方法</p>
+<p><a href="https://www.virtualbox.org/">下載 virtual machine</a></p>
+<pre><code>// 安裝 今天的主角
+$brew cask install minikube
+
+// 安裝 k8s 的 cli 工具
+$brew install kubectl
 </code></pre>
-<p>使用 url 初始化</p>
-<pre><code>rdslock.InitURL(&quot;redis://127.0.0.1:6379&quot;)
+<hr>
+<p>開啟minikube 啟動 Kubernetes cluster</p>
+<pre><code>$minikube start
 </code></pre>
-<p>使用已有連線 初始化 rdslock</p>
-<pre><code>client := redis.NewClient(&amp;redis.Options{
-    Addr:     &quot;127.0.0.1:6379&quot;,
-    Password: &quot;&quot;,
-    DB:       0,
-})
-
-rdslock.InitAssigned(client)
+<p>查看 minikube 狀態</p>
+<pre><code>$minikube status
 </code></pre>
-<p>在分佈式系統 執行一次的作法</p>
-<pre><code>const key = &quot;LOCK_TEST_KEY&quot;
-
-err := rdslock.Lock(key, 5 * time.Second )
-if err != nil {
-    println(err.Error())
-    return
-}
-println(&quot;lock success  ... &quot;)
-
-do something ....
-
-err = rdslock.UnLock(key)
-if err != nil {
-    println(err.Error())
-    return
-} 
-
-println(&quot;unlock success ...&quot;)
+<p>使用圖形化介面 minikube</p>
+<pre><code>$minikube dashboard
 </code></pre>
-<p><a href="https://github.com/jamesblockk/rdslock">rdslock package</a></p>
+<hr>
+<p>k8s 狀態</p>
+<pre><code>$kubectl cluster-info
+</code></pre>
+<p>部署應用</p>
+<pre><code>$kubectl run $(APP-NAME) --image=docker.APP-NAME.image:v1 --port 3000
+</code></pre>
+<p>已啟動的應用</p>
+<pre><code>$kubectl get pods
+</code></pre>
+<p>對外公開應用</p>
+<pre><code>$kubectl expose deployment APP-NAME --type=&quot;NodePort&quot; --port 3000
+</code></pre>
+<p>取得 service 列表</p>
+<pre><code>$kubectl get services
+</code></pre>
+<p>取得service url</p>
+<pre><code>$minikube service APP-NAME --url
+</code></pre>
+<hr>
+<p>擴充應用</p>
+<p>查看deployments</p>
+<pre><code>$kubectl get deployments
+</code></pre>
+<p>修改副本數量</p>
+<pre><code>$kubectl scale APP-NAME --replicas=3
+</code></pre>
 
                 
                 
@@ -294,10 +296,15 @@ println(&quot;unlock success ...&quot;)
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/cicd/docker_info/" data-toggle="tooltip" data-placement="top" title="使用 docker 常用指令大彙整">&larr;
+                        <a href="/post/golang/makefile/" data-toggle="tooltip" data-placement="top" title="Hugo automatically deploy makefile">&larr;
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/service/rocketchat/" data-toggle="tooltip" data-placement="top" title="使用docker 開始 rocket chat!!">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
 

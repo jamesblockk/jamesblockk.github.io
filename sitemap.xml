@@ -53,17 +53,17 @@
   </url>
   
   <url>
+    <loc>https://jamesblockk.github.io/categories/cicd/</loc>
+    <lastmod>2019-07-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jamesblockk.github.io/tags/docker/</loc>
     <lastmod>2019-07-24T21:49:20+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jamesblockk.github.io/categories/docker/</loc>
-    <lastmod>2019-07-24T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jamesblockk.github.io/post/docker/docker_info/</loc>
+    <loc>https://jamesblockk.github.io/post/cicd/docker_info/</loc>
     <lastmod>2019-07-24T21:49:20+02:00</lastmod>
   </url>
   
@@ -78,7 +78,7 @@
   </url>
   
   <url>
-    <loc>https://jamesblockk.github.io/post/docker/rocketchat/</loc>
+    <loc>https://jamesblockk.github.io/post/service/rocketchat/</loc>
     <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url>
   
@@ -88,12 +88,12 @@
   </url>
   
   <url>
-    <loc>https://jamesblockk.github.io/post/k8s/minikube/</loc>
-    <lastmod>2019-02-18T21:49:20+02:00</lastmod>
+    <loc>https://jamesblockk.github.io/categories/service/</loc>
+    <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jamesblockk.github.io/categories/k8s/</loc>
+    <loc>https://jamesblockk.github.io/post/cicd/minikube/</loc>
     <lastmod>2019-02-18T21:49:20+02:00</lastmod>
   </url>
   

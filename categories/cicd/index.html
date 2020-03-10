@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="使用 redis 建立 分佈式鎖" />
-    <meta property="og:title" content="使用 redis 建立 分佈式鎖" />
-    <meta property="twitter:title" content="使用 redis 建立 分佈式鎖" />
+    <meta name="title" content="cicd" />
+    <meta property="og:title" content="cicd" />
+    <meta property="twitter:title" content="cicd" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="golang, PaaS, docker, Kubernetes, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>使用 redis 建立 分佈式鎖-JamesBlockk Blog</title>
+    <title>cicd-JamesBlockk Blog</title>
 
-    <link rel="canonical" href="/post/golang/lock/">
+    <link rel="canonical" href="/categories/cicd/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -168,49 +168,14 @@
 
 
 
-
-<style type="text/css">
-    header.intro-header {
-        background-image: url('/img/home-bg-jeep.jpg')
-    }
-</style>
-<header class="intro-header">
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/golang" title="golang">
-                            golang
-                        </a>
-                        
-                        <a class="tag" href="/tags/go-redis" title="go-redis">
-                            go-redis
-                        </a>
-                        
-                        <a class="tag" href="/tags/redis" title="redis">
-                            redis
-                        </a>
-                        
-                        <a class="tag" href="/tags/lock" title="lock">
-                            lock
-                        </a>
-                        
-                    </div>
-                    <h1>使用 redis 建立 分佈式鎖</h1>
-                    <h2 class="subheading"></h2>
-                    <span class="meta">
-                        Posted by 
-                        
-                                JamsBlocKK Blog
-                         
-                        on 
-                        Wednesday, February 26, 2020
-                        
-                        
-                        
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>JamsBlocKK Blog </h1>
+                    
+		    <span class="subheading">Stay Hungry, Stay Foolish </span>
                 </div>
             </div>
         </div>
@@ -219,160 +184,194 @@
 
 
 
-
-<article>
-    <div class="container">
-        <div class="row">
-
+  
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
             
-            <div class="
-                col-lg-11 col-lg-offset-1
-                col-md-10 col-md-offset-1
-                post-container">
 
-                
-                <header>
-                    <h2>TOC</h2>
-                </header>
-                <nav id="TableOfContents"></nav>
-                
-                <p>引入套件</p>
-<pre><code>import &quot;github.com/jamesblockk/rdslock&quot;
-</code></pre>
-<p>使用 url 初始化</p>
-<pre><code>rdslock.InitURL(&quot;redis://127.0.0.1:6379&quot;)
-</code></pre>
-<p>使用已有連線 初始化 rdslock</p>
-<pre><code>client := redis.NewClient(&amp;redis.Options{
-    Addr:     &quot;127.0.0.1:6379&quot;,
-    Password: &quot;&quot;,
-    DB:       0,
-})
-
-rdslock.InitAssigned(client)
-</code></pre>
-<p>在分佈式系統 執行一次的作法</p>
-<pre><code>const key = &quot;LOCK_TEST_KEY&quot;
-
-err := rdslock.Lock(key, 5 * time.Second )
-if err != nil {
-    println(err.Error())
-    return
-}
-println(&quot;lock success  ... &quot;)
-
-do something ....
-
-err = rdslock.UnLock(key)
-if err != nil {
-    println(err.Error())
-    return
-} 
-
-println(&quot;unlock success ...&quot;)
-</code></pre>
-<p><a href="https://github.com/jamesblockk/rdslock">rdslock package</a></p>
-
-                
-                
+<div class="post-preview">
+    <a href="https://jamesblockk.github.io/post/cicd/docker_info/">
+        <h2 class="post-title">
+            使用 docker 常用指令大彙整
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            <p>容器化 docker  時代</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by JamsBlocKK Blog Wednesday, July 24, 2019
+    
+    
+    </p>
 
 </div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
+<hr>
+
+<div class="post-preview">
+    <a href="https://jamesblockk.github.io/post/cicd/minikube/">
+        <h2 class="post-title">
+            使用minikube 玩轉 k8s
+        </h2>
 	
+        <div class="post-content-preview">
 	
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+            <p>local 端的 單點 node  k8s 入門工具</p>
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by JamsBlocKK Blog Monday, February 18, 2019
+    
+    
+    </p>
+
+</div>
+<hr>
+
+
+            
+
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+             
+            
+                
+            
+                
+                    <a href="/tags/docker" title="docker">
+                        docker
+                    </a>
+                
+            
+                
+            
+                
+                    <a href="/tags/golang" title="golang">
+                        golang
+                    </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    </section>
+    
+
+    
+	
+    <section class="visible-md visible-lg">
+	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
+        <div class="short-about">
+            
+            <a href="/top/about">
+               <img src="/img/avatar.png" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Software Developer</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               <li>
+                   <a href='/categories/cicd/index.xml' rel="alternate" type="application/rss+xml" title="JamsBlocKK Blog" >
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/jamesblockk">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+            
+            
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="/"></a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
+</div>
+
 	</div>
 </div>
-<script type="text/javascript" src="/js/reward.js"></script>
 
-                
-
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/post/cicd/docker_info/" data-toggle="tooltip" data-placement="top" title="使用 docker 常用指令大彙整">&larr;
-                            Previous Post</a>
-                    </li>
-                    
-                    
-                </ul>
-
-                
-<div id="disqus-comment"></div>
-
-
-
-            </div>
-            
-            <div class="
-                col-lg-11 col-lg-offset-1
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                        
-                        
-                        
-                        
-                        <a href="/tags/docker" title="docker">
-                            docker
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/tags/golang" title="golang">
-                            golang
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    </div>
-                </section>
-                
-
-                
-                
-                <section>
-                    <hr>
-                    <h5>FRIENDS</h5>
-                    <ul class="list-inline">
-                        
-                        <li><a target="_blank" href=""></a></li>
-                        
-                    </ul>
-                </section>
-                
-            </div>
-        </div>
-    </div>
-</article>
 
 
 
@@ -384,7 +383,7 @@ println(&quot;unlock success ...&quot;)
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="JamsBlocKK Blog" >
+                       <a href='/categories/cicd/index.xml' rel="alternate" type="application/rss+xml" title="JamsBlocKK Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

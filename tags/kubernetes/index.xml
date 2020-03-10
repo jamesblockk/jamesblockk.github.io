@@ -13,10 +13,10 @@
     
     <item>
       <title>使用minikube 玩轉 k8s</title>
-      <link>https://jamesblockk.github.io/post/k8s/minikube/</link>
+      <link>https://jamesblockk.github.io/post/cicd/minikube/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/k8s/minikube/</guid>
+      <guid>https://jamesblockk.github.io/post/cicd/minikube/</guid>
       <description>&lt;p&gt;local 端的 單點 node  k8s 入門工具&lt;/p&gt;</description>
     </item>
     

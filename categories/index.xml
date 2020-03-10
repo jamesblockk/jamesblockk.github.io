@@ -21,20 +21,20 @@
     </item>
     
     <item>
-      <title>docker</title>
-      <link>https://jamesblockk.github.io/categories/docker/</link>
+      <title>cicd</title>
+      <link>https://jamesblockk.github.io/categories/cicd/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/docker/</guid>
+      <guid>https://jamesblockk.github.io/categories/cicd/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>k8s</title>
-      <link>https://jamesblockk.github.io/categories/k8s/</link>
-      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
+      <title>service</title>
+      <link>https://jamesblockk.github.io/categories/service/</link>
+      <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/k8s/</guid>
+      <guid>https://jamesblockk.github.io/categories/service/</guid>
       <description></description>
     </item>
     
