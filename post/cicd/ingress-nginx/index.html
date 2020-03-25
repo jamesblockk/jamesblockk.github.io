@@ -268,7 +268,7 @@ ports:
     port: 80
     targetPort: 80
 
-k8s-n1 &gt; kubectl apply -f service-hello.yaml
+k8s-m1 &gt; kubectl apply -f service-hello.yaml
 </code></pre>
 <p>設定 ingress</p>
 <pre><code>ingress-hello.yaml
@@ -290,7 +290,7 @@ spec:
         servicePort: 80
       
 
-k8s-n1 &gt; kubectl apply -f ingress-hello.yaml
+k8s-m1 &gt; kubectl apply -f ingress-hello.yaml
 </code></pre>
 <p>到 要瀏覽的主機 設定 client 的 dns 解析</p>
 <pre><code>echo &quot;your-node-ip  nginx.testdomain.com&quot; &gt;&gt; /etc/hosts
@@ -325,6 +325,11 @@ k8s-n1 &gt; kubectl apply -f ingress-hello.yaml
                             Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/post/cicd/ingress-traefik/" data-toggle="tooltip" data-placement="top" title="ingree controller - traefik">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -368,6 +373,10 @@ k8s-n1 &gt; kubectl apply -f ingress-hello.yaml
                         
                         
                         
+                        
+                        <a href="/tags/ingress" title="ingress">
+                            ingress
+                        </a>
                         
                         
                         

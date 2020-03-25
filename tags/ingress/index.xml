@@ -6,10 +6,20 @@
     <description>Recent content in ingress on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/tags/ingress/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ingree controller - traefik</title>
+      <link>https://jamesblockk.github.io/post/cicd/ingress-traefik/</link>
+      <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/post/cicd/ingress-traefik/</guid>
+      <description>&lt;p&gt;外部使用 k8s 建置好的服務
+快速建置 traefik ingress controller&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ingree controller - nginx</title>

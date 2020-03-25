@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="minikube" />
-    <meta property="og:title" content="minikube" />
-    <meta property="twitter:title" content="minikube" />
+    <meta name="title" content="ingree controller - traefik" />
+    <meta property="og:title" content="ingree controller - traefik" />
+    <meta property="twitter:title" content="ingree controller - traefik" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="golang, PaaS, docker, Kubernetes, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>minikube-JamesBlockk Blog</title>
+    <title>ingree controller - traefik-JamesBlockk Blog</title>
 
-    <link rel="canonical" href="/tags/minikube/">
+    <link rel="canonical" href="/post/cicd/ingress-traefik/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -168,14 +168,41 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home-bg-jeep.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>JamsBlocKK Blog </h1>
-                    
-		    <span class="subheading">Stay Hungry, Stay Foolish </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/kubernetes" title="kubernetes">
+                            kubernetes
+                        </a>
+                        
+                        <a class="tag" href="/tags/ingress" title="ingress">
+                            ingress
+                        </a>
+                        
+                    </div>
+                    <h1>ingree controller - traefik</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                JamsBlocKK Blog
+                         
+                        on 
+                        Tuesday, March 24, 2020
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -184,183 +211,206 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
+
+<article>
+    <div class="container">
+        <div class="row">
+
             
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
 
-<div class="post-preview">
-    <a href="https://jamesblockk.github.io/post/cicd/minikube/">
-        <h2 class="post-title">
-            使用minikube 玩轉 k8s
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            <p>local 端的 單點 node  k8s 入門工具</p>
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by JamsBlocKK Blog Monday, February 18, 2019
-    
-    
-    </p>
-
-</div>
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents"></nav>
+                
+                <p>外部使用 k8s 建置好的服務
+快速建置 traefik ingress controller</p>
+<p>安裝</p>
+<pre><code>k8s-m1&gt; git clone https://github.com/jamesblockk/blog-cicd.git
+k8s-m1&gt; cd k8s-traefik
+</code></pre>
+<p>設定 k8s 節點標籤</p>
+<pre><code>format : kubectl label nodes [node-name] [key=value]
+k8s-m1 k8s-traefik &gt; kubectl label nodes k8s-node-2-12 IngressProxy=true
+</code></pre>
+<p>查看 k8s 節點標籤</p>
+<pre><code>k8s-m1 k8s-traefik &gt; kubectl get nodes --show-labels
+</code></pre>
+<p>部署 traefik</p>
+<pre><code>k8s-m1 k8s-traefik &gt; kubectl apply -f crd.yaml
+k8s-m1 k8s-traefik &gt; kubectl apply -f rbac.yaml
+k8s-m1 k8s-traefik &gt; kubectl apply -f config.yaml
+k8s-m1 k8s-traefik &gt; kubectl apply -f deploy.yaml
+</code></pre>
+<p>部署 traefik-dashboard
+k8s-m1 k8s-traefik &gt; kubectl apply -f dashboard.yaml</p>
+<p>到 client 端</p>
+<pre><code>echo &quot;your-node-ip  traefik.awesome-domain.com&quot; &gt;&gt; /etc/hosts
+curl traefik.awesome-domain.com
+</code></pre>
+<p>現在到 瀏覽器 瀏覽 <a href="http://traefik.awesome-domain.com">http://traefik.awesome-domain.com</a> 可以看到網頁了～</p>
 <hr>
+<p>service 設定</p>
+<p>回到 k8s-m1 設定 service</p>
+<pre><code>service-hello.yaml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-app
+spec:
+selector:
+  app: hello-app
+ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
 
+k8s-m1 &gt; kubectl apply -f service-hello.yaml
+</code></pre>
+<p>設定 ingress</p>
+<pre><code>ingress-hello.yaml
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: service-ingress
+spec:
+  rules:
+  - host: traefik.testdomain.com
+    http:
+    paths:
+    - path: /hello 
+      backend:
+        serviceName: hello-app
+        servicePort: 80
+      
 
-            
+k8s-m1 &gt; kubectl apply -f ingress-hello.yaml
+</code></pre>
+<p>到 要瀏覽的主機 設定 client 的 dns 解析</p>
+<pre><code>echo &quot;your-node-ip  traefik.testdomain.com&quot; &gt;&gt; /etc/hosts
+</code></pre>
+<p>執行</p>
+<pre><code>curl traefik.testdomain.com/hello
+</code></pre>
+<p>完成！！！！！</p>
 
+                
+                
 
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-             
-            
-                
-            
-                
-                    <a href="/tags/docker" title="docker">
-                        docker
-                    </a>
-                
-            
-                
-            
-                
-                    <a href="/tags/golang" title="golang">
-                        golang
-                    </a>
-                
-            
-                
-            
-                
-            
-                
-                    <a href="/tags/ingress" title="ingress">
-                        ingress
-                    </a>
-                
-            
-                
-                    <a href="/tags/kubernetes" title="kubernetes">
-                        kubernetes
-                    </a>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </div>
-    </section>
-    
-
-    
-	
-    <section class="visible-md visible-lg">
-	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
-        <div class="short-about">
-            
-            <a href="/top/about">
-               <img src="/img/avatar.png" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Software Developer</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               <li>
-                   <a href='/tags/minikube/index.xml' rel="alternate" type="application/rss+xml" title="JamsBlocKK Blog" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/jamesblockk">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-            
-            
-               
-               
-                </ul>
-            </div>
-    </section>
-	
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="/"></a></li>
-            
-        </ul>
-    </section>
-    
-
-    
-    
 </div>
-
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	
+	
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
 	</div>
 </div>
+<script type="text/javascript" src="/js/reward.js"></script>
 
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/cicd/ingress-nginx/" data-toggle="tooltip" data-placement="top" title="ingree controller - nginx">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/docker" title="docker">
+                            docker
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/golang" title="golang">
+                            golang
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/ingress" title="ingress">
+                            ingress
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/kubernetes" title="kubernetes">
+                            kubernetes
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href=""></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -372,7 +422,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/tags/minikube/index.xml' rel="alternate" type="application/rss+xml" title="JamsBlocKK Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="JamsBlocKK Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
