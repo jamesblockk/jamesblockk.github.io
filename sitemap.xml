@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jamesblockk.github.io/post/cicd/ingress-nginx/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jamesblockk.github.io/categories/</loc>
-    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jamesblockk.github.io/categories/cicd/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jamesblockk.github.io/tags/ingress/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jamesblockk.github.io/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jamesblockk.github.io/tags/kubernetes/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jamesblockk.github.io/post/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jamesblockk.github.io/tags/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +58,7 @@
   </url>
   
   <url>
-    <loc>https://jamesblockk.github.io/</loc>
-    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jamesblockk.github.io/tags/lock/</loc>
-    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jamesblockk.github.io/post/</loc>
     <lastmod>2020-02-26T21:49:20+02:00</lastmod>
   </url>
   
@@ -43,18 +68,8 @@
   </url>
   
   <url>
-    <loc>https://jamesblockk.github.io/tags/</loc>
-    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jamesblockk.github.io/post/golang/lock/</loc>
     <lastmod>2020-02-26T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jamesblockk.github.io/categories/cicd/</loc>
-    <lastmod>2019-07-24T21:49:20+02:00</lastmod>
   </url>
   
   <url>
@@ -94,11 +109,6 @@
   
   <url>
     <loc>https://jamesblockk.github.io/post/cicd/minikube/</loc>
-    <lastmod>2019-02-18T21:49:20+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jamesblockk.github.io/tags/kubernetes/</loc>
     <lastmod>2019-02-18T21:49:20+02:00</lastmod>
   </url>
   

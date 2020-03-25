@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="使用 docker 常用指令大彙整" />
-    <meta property="og:title" content="使用 docker 常用指令大彙整" />
-    <meta property="twitter:title" content="使用 docker 常用指令大彙整" />
+    <meta name="title" content="ingree controller - nginx" />
+    <meta property="og:title" content="ingree controller - nginx" />
+    <meta property="twitter:title" content="ingree controller - nginx" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="golang, PaaS, docker, Kubernetes, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>使用 docker 常用指令大彙整-JamesBlockk Blog</title>
+    <title>ingree controller - nginx-JamesBlockk Blog</title>
 
-    <link rel="canonical" href="/post/cicd/docker_info/">
+    <link rel="canonical" href="/post/cicd/ingress-nginx/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -181,12 +181,16 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/docker" title="docker">
-                            docker
+                        <a class="tag" href="/tags/kubernetes" title="kubernetes">
+                            kubernetes
+                        </a>
+                        
+                        <a class="tag" href="/tags/ingress" title="ingress">
+                            ingress
                         </a>
                         
                     </div>
-                    <h1>使用 docker 常用指令大彙整</h1>
+                    <h1>ingree controller - nginx</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -194,7 +198,7 @@
                                 JamsBlocKK Blog
                          
                         on 
-                        Wednesday, July 24, 2019
+                        Tuesday, March 24, 2020
                         
                         
                         
@@ -222,26 +226,79 @@
                 <header>
                     <h2>TOC</h2>
                 </header>
-                <nav id="TableOfContents">
-  <ul>
-    <li><a href="#進入容器">進入容器</a></li>
-  </ul>
-</nav>
+                <nav id="TableOfContents"></nav>
                 
-                <p>容器化 docker  時代</p>
-<p><img src="/command_diagram/docker.png" alt="Docker Command Diagram"></p>
-<h2 id="進入容器">進入容器</h2>
-<p>在使用 -d 參數時，容器啟動後會進入背景執行</p>
-<p>進入容器 :</p>
-<pre><code>$sudo docker exec -ti (image_name) bash
+                <p>外部使用 k8s 建置好的服務</p>
+<p>安裝</p>
+<pre><code>k8s-m1&gt; git clone https://github.com/kubernetes/ingress-nginx.git
+k8s-m1&gt; cd ingress-nginx/delpoy/static
 </code></pre>
-<p>進入容器後.需要編輯文件, 編輯器的安裝方式 :</p>
-<pre><code>$root@62697b2bdacf:/ apt-get update
-$root@62697b2bdacf:/ apt-get -y install vim
+<p>修改 mandatory.yaml, 設定 hostNetwork: true</p>
+<pre><code>k8s-m1 static &gt; vim mandatory.yaml
+
+annotations:
+    prometheus.io/port: &quot;10254&quot;
+    prometheus.io/scrape: &quot;true&quot;
+spec:
+  hostNetwork: true # &lt;-- 加入這行
+  # wait up to five minutes for the drain of connections
+  terminationGracePeriodSeconds: 300
+  serviceAccountName: nginx-ingress-serviceaccount
 </code></pre>
-<p>參考文件：</p>
-<p><a href="https://philipzheng.gitbooks.io/docker_practice/content/index.html">Docker — 從入門到實踐</a></p>
-<p><a href="http://octopress.fntsr.tw/articles/2014/12/15/docker-command-diagram">Docker Command Diagram</a></p>
+<p>執行</p>
+<pre><code>k8s-m1 static &gt; kubectl apply -f mandatory.yaml
+</code></pre>
+<p>到 k8s-node 查看 80, 443 端口狀況</p>
+<pre><code>k8s-n1 &gt; netstat -tunlp
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      28150/nginx.conf
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      28150/nginx.conf
+</code></pre>
+<p>回到 k8s-m1 設定 service</p>
+<pre><code>service-hello.yaml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-app
+spec:
+selector:
+  app: hello-app
+ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+
+k8s-n1 &gt; kubectl apply -f service-hello.yaml
+</code></pre>
+<p>設定 ingress</p>
+<pre><code>ingress-hello.yaml
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+annotations:
+  kubernetes.io/ingress.class: &quot;nginx&quot;
+spec:
+  rules:
+  - host: nginx.testdomain.com
+    http:
+    paths:
+    - path: /hello 
+      backend:
+        serviceName: hello-app
+        servicePort: 80
+      
+
+k8s-n1 &gt; kubectl apply -f ingress-hello.yaml
+</code></pre>
+<p>到 要瀏覽的主機 設定 client 的 dns 解析</p>
+<pre><code>echo &quot;your-node-ip  nginx.testdomain.com&quot; &gt;&gt; /etc/hosts
+</code></pre>
+<p>執行</p>
+<pre><code>curl nginx.testdomain.com/hello
+</code></pre>
+<p>完成！！！！！</p>
 
                 
                 
@@ -264,15 +321,10 @@ $root@62697b2bdacf:/ apt-get -y install vim
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/golang/gomobile/" data-toggle="tooltip" data-placement="top" title="使用 gomobile 來建立前端共同的核心物件">&larr;
+                        <a href="/post/golang/lock/" data-toggle="tooltip" data-placement="top" title="使用 redis 建立 分佈式鎖">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/golang/lock/" data-toggle="tooltip" data-placement="top" title="使用 redis 建立 分佈式鎖">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
 

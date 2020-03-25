@@ -6,10 +6,19 @@
     <description>Recent content in Posts on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2020 21:49:20 +0200</lastBuildDate>
     
 	<atom:link href="https://jamesblockk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ingree controller - nginx</title>
+      <link>https://jamesblockk.github.io/post/cicd/ingress-nginx/</link>
+      <pubDate>Tue, 24 Mar 2020 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/post/cicd/ingress-nginx/</guid>
+      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>使用 redis 建立 分佈式鎖</title>
