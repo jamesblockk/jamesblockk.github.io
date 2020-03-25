@@ -228,15 +228,18 @@
                 </header>
                 <nav id="TableOfContents"></nav>
                 
-                <p>外部使用 k8s 建置好的服務
-快速建置 traefik ingress controller</p>
+                <p>外部使用 k8s 建置好的服務</p>
+<p>快速建置 traefik ingress controller</p>
+<pre><code>ss=&quot;dd.png&quot;
+</code></pre>
+<hr>
 <p>安裝</p>
 <pre><code>k8s-m1&gt; git clone https://github.com/jamesblockk/blog-cicd.git
 k8s-m1&gt; cd k8s-traefik
 </code></pre>
 <p>設定 k8s 節點標籤</p>
 <pre><code>format : kubectl label nodes [node-name] [key=value]
-k8s-m1 k8s-traefik &gt; kubectl label nodes k8s-node-2-12 IngressProxy=true
+k8s-m1 k8s-traefik &gt; kubectl label nodes k8s-n1 IngressProxy=true
 </code></pre>
 <p>查看 k8s 節點標籤</p>
 <pre><code>k8s-m1 k8s-traefik &gt; kubectl get nodes --show-labels
@@ -247,8 +250,9 @@ k8s-m1 k8s-traefik &gt; kubectl apply -f rbac.yaml
 k8s-m1 k8s-traefik &gt; kubectl apply -f config.yaml
 k8s-m1 k8s-traefik &gt; kubectl apply -f deploy.yaml
 </code></pre>
-<p>部署 traefik-dashboard
-k8s-m1 k8s-traefik &gt; kubectl apply -f dashboard.yaml</p>
+<p>部署 traefik-dashboard</p>
+<pre><code>k8s-m1 k8s-traefik &gt; kubectl apply -f dashboard.yaml
+</code></pre>
 <p>到 client 端</p>
 <pre><code>echo &quot;your-node-ip  traefik.awesome-domain.com&quot; &gt;&gt; /etc/hosts
 curl traefik.awesome-domain.com
