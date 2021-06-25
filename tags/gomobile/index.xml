@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>gomobile on JamsBlocKK Blog</title>
+    <title>gomobile on JamsBlocKK</title>
     <link>https://jamesblockk.github.io/tags/gomobile/</link>
-    <description>Recent content in gomobile on JamsBlocKK Blog</description>
+    <description>Recent content in gomobile on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 21:49:20 +0200</lastBuildDate>
-    
-	<atom:link href="https://jamesblockk.github.io/tags/gomobile/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 17 Mar 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/gomobile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>
-      <link>https://jamesblockk.github.io/post/golang/gomobile/</link>
+      <link>https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/golang/gomobile/</guid>
+      <guid>https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/</guid>
       <description>&lt;p&gt;同一個相同核心 用相同語言去完成
 可以減少許多維護的成本&lt;/p&gt;</description>
     </item>

@@ -1,87 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JamsBlocKK Blog</title>
+    <title>JamsBlocKK</title>
     <link>https://jamesblockk.github.io/</link>
-    <description>Recent content on JamsBlocKK Blog</description>
+    <description>Recent content on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate>
-    
-	<atom:link href="https://jamesblockk.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>ingree controller - traefik</title>
-      <link>https://jamesblockk.github.io/post/cicd/ingress-traefik/</link>
-      <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/post/cicd/ingress-traefik/</guid>
-      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;
-&lt;p&gt;快速建置 traefik ingress controller&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ingree controller - nginx</title>
-      <link>https://jamesblockk.github.io/post/cicd/ingress-nginx/</link>
-      <pubDate>Tue, 24 Mar 2020 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/post/cicd/ingress-nginx/</guid>
-      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>使用 redis 建立 分佈式鎖</title>
-      <link>https://jamesblockk.github.io/post/golang/lock/</link>
-      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/post/golang/lock/</guid>
-      <description></description>
-    </item>
-    
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 docker 常用指令大彙整</title>
-      <link>https://jamesblockk.github.io/post/cicd/docker_info/</link>
+      <link>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/cicd/docker_info/</guid>
+      <guid>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</guid>
       <description>&lt;p&gt;容器化 docker  時代&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>
-      <link>https://jamesblockk.github.io/post/golang/gomobile/</link>
+      <link>https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/golang/gomobile/</guid>
+      <guid>https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/</guid>
       <description>&lt;p&gt;同一個相同核心 用相同語言去完成
 可以減少許多維護的成本&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用docker 開始 rocket chat!!</title>
-      <link>https://jamesblockk.github.io/post/service/rocketchat/</link>
+      <link>https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/service/rocketchat/</guid>
+      <guid>https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用minikube 玩轉 k8s</title>
-      <link>https://jamesblockk.github.io/post/cicd/minikube/</link>
+      <link>https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/cicd/minikube/</guid>
+      <guid>https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/</guid>
       <description>&lt;p&gt;local 端的 單點 node  k8s 入門工具&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo automatically deploy makefile</title>
-      <link>https://jamesblockk.github.io/post/golang/makefile/</link>
+      <link>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/golang/makefile/</guid>
+      <guid>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</guid>
       <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;
 &lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈
 makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
@@ -90,19 +58,19 @@ makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
     
     <item>
       <title>Hello World</title>
-      <link>https://jamesblockk.github.io/post/helloworld/</link>
+      <link>https://jamesblockk.github.io/2019/01/10/hello-world/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/helloworld/</guid>
-      <description>Hello World !!~ :)))</description>
+      <guid>https://jamesblockk.github.io/2019/01/10/hello-world/</guid>
+      <description>Hello World !!~~ :)))</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jamesblockk.github.io/post/golang/script/</link>
+      <link>https://jamesblockk.github.io/1/01/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/golang/script/</guid>
+      <guid>https://jamesblockk.github.io/1/01/01/</guid>
       <description>#!/bin/bash IPS=(&amp;quot;&amp;quot;)
 read -p &amp;ldquo;cmd: &amp;quot; CMD for ip in ${IPS[*]} do echo $ip ssh -t root@$ip $CMD done
 echo &amp;ldquo;&amp;mdash;&amp;mdash;-&amp;rdquo; echo &amp;ldquo;the scrpit is done&amp;rdquo;</description>

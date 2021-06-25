@@ -1,113 +1,442 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="zh-tw">
+<head>
+    <title>Hugo automatically deploy makefile &middot; JamsBlocKK</title>
+    <meta name="generator" content="Hugo 0.84.1" />
     <meta charset="utf-8">
-    <meta name="theme-color" content="#000" />
-    <title>
-        
-            Hugo automatically deploy makefile &middot; JamsBlocKK 
-        
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="JamsBlocKK">
+    
+      <meta name="description" content="">
+    
+    
+    <link rel="canonical" href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/"/>
+    <link rel="icon" href="https://jamesblockk.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://jamesblockk.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://jamesblockk.github.io/css/style.css">
+    <link rel="stylesheet" href="https://jamesblockk.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://jamesblockk.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://jamesblockk.github.io/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Hugo automatically deploy makefile" />
+<meta property="og:description" content="hugo website 要發佈到github 總是很麻煩
+來使用 makefile 簡易寫一個scipt的發佈
+makefile 檔案 記得放在 website-hugo 的第一層
+之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-01-11T21:49:20&#43;02:00" />
+<meta property="article:modified_time" content="2019-01-11T21:49:20&#43;02:00" />
+
 
     
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-        integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    
-    
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:300,300italic,700" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Fira+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta itemprop="name" content="Hugo automatically deploy makefile">
+<meta itemprop="description" content="hugo website 要發佈到github 總是很麻煩
+來使用 makefile 簡易寫一個scipt的發佈
+makefile 檔案 記得放在 website-hugo 的第一層
+之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了"><meta itemprop="datePublished" content="2019-01-11T21:49:20&#43;02:00" />
+<meta itemprop="dateModified" content="2019-01-11T21:49:20&#43;02:00" />
+<meta itemprop="wordCount" content="57">
+<meta itemprop="keywords" content="hugo,website," />
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo automatically deploy makefile"/>
+<meta name="twitter:description" content="hugo website 要發佈到github 總是很麻煩
+來使用 makefile 簡易寫一個scipt的發佈
+makefile 檔案 記得放在 website-hugo 的第一層
+之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了"/>
 
-    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/atom.xml" />
+    
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="">
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-        <div class="container"><div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
-    <a href="/" class="pure-menu-heading">
-         
-            JamsBlocKK 
-         
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://jamesblockk.github.io/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://jamesblockk.github.io/css/images/logo.png')"></i>
+          
+          <span class="site-title">JamsBlocKK</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://jamesblockk.github.io/">Home</a>
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">About</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://jamesblockk.github.io/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://jamesblockk.github.io/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://jamesblockk.github.io/css/images/avatarx.jpg"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://jamesblockk.github.io/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://jamesblockk.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">About</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://jamesblockk.github.io/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://jamesblockk.github.io/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://jamesblockk.github.io/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://jamesblockk.github.io/css/images/avatarx.jpg">
+      
+      <h2 id="name">JamsBlocKK</h2>
+      <h3 id="title">-Programmer -Gopher -Music</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/jamesblockk">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        7
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          10
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/jamesblockk" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <td><a href="https://jamesblockk.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://jamesblockk.github.io/banners/hugo.png" class="article-banner">
+        
+
+        <header class="article-header">
+    <a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/">
+    <h1 class="article-title" itemprop="name">
+        Hugo automatically deploy makefile
+    </h1>
     </a>
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item">
-            <a href="/posts" class="pure-menu-link">
-                <i class="fa fa-archive"></i>
-                Articles
-            </a>
-        </li>
-        <li class="pure-menu-item">
-            <a href="/tags" class="pure-menu-link">
-                <i class="fas fa-comments"></i>
-                Categories
-            </a>
-        </li>
-        <li class="pure-menu-item">
-            <a href="/about" class="pure-menu-link">
-                <i class="fas fa-smile"></i>
-                About
-            </a>
-        </li>
-    </ul>
-    <ul class="pure-menu-list pull-right">
-        
-        <li class="pure-menu-item">
-            <a href="jamesblockk" title="Github" class="pure-menu-link">
-                <i class="fab fa-github"></i>
-            </a>
-        </li>
-        
-        
-        
-        
-        
-        <li class="pure-menu-item">
-            <a href="/atom.xml" title="Atom Feed" class="pure-menu-link">
-                <i class="fas fa-rss-square"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-<div class="pure-u-1">
-    <div class="pad">
-    </div>
-</div>
-<div class="pure-g">
+    <div class="article-meta">
 
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-01-11 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-01-11</time>
+            &middot;
+            57
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/categories/hugo">hugo</a>
+                
+                
+            </div>
+            
+        
 
-<div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
-    <div class="pad">
-<div class="date">
-    <time pubdate="2019-01-11">January 11, 2019</time>
-    <span class="author">by Pravin Paratey</span>
-</div>
-
-<article>
-    <h1><a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/">Hugo automatically deploy makefile</a></h1>
-    <div class="tags">
         
-        
-        <a href="/tags/hugo" class="pure-button">hugo</a>
-        
-        
-        <a href="/tags/website" class="pure-button">website</a>
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/hugo">hugo</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://jamesblockk.github.io/tags/website">website</a>
+                
+                
+            </div>
+            
         
     </div>
-    <!-- raw HTML omitted -->
-<p>deploy :
-rm -rf public
-git clone <a href="https://github.com/$(GITHUB_NAME)/$(GITHUB_NAME).github.io.git">https://github.com/$(GITHUB_NAME)/$(GITHUB_NAME).github.io.git</a>
-mv $(GITHUB_NAME).github.io public
-hugo
-cd public/ &amp;&amp; git add .
-cd public/ &amp;&amp; git commit -m &quot;[ToDo] update&quot;
-cd public/ &amp;&amp; git push
-<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-</article><div id="disqus_thread"></div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>hugo website 要發佈到github 總是很麻煩</p>
+<p>來使用 makefile 簡易寫一個scipt的發佈
+makefile 檔案 記得放在 website-hugo 的第一層</p>
+<p>之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了</p>
+<p>makefile 範例檔:</p>
+<pre><code>GITHUB_NAME = jamesblockk
+
+deploy :
+    rm -rf public
+    git clone https://github.com/$(GITHUB_NAME)/$(GITHUB_NAME).github.io.git
+    mv $(GITHUB_NAME).github.io public
+    hugo
+    cd public/ &amp;&amp; git add . 
+    cd public/ &amp;&amp; git commit -m &quot;[ToDo] update&quot; 
+    cd public/ &amp;&amp; git push 
+</code></pre>
+<p>附上github 檔案位置 <a href="https://github.com/jamesblockk/quick/blob/master/hugo/makefile">https://github.com/jamesblockk/quick/blob/master/hugo/makefile</a></p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/" data-id="0f8d286de025bf68b54fcbbcc8193598" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://jamesblockk.github.io/2019/01/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+    
+
+    
+    <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">使用minikube 玩轉 k8s</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -128,125 +457,397 @@ cd public/ &amp;&amp; git push
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://jamesblockk.github.io/banners/docker.png)" alt="Hugo automatically deploy makefile" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/docker">
+                        docker
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/" class="title">使用 docker 常用指令大彙整</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-07-24 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-07-24</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://jamesblockk.github.io/banners/golang.png)" alt="Hugo automatically deploy makefile" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/golang">
+                        golang
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/" class="title">使用 gomobile 來建立前端共同的核心物件</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-03-17 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-03-17</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://jamesblockk.github.io/banners/rocketchat.jpg)" alt="Hugo automatically deploy makefile" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/rocket.chat">
+                        rocket.chat
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" class="title">使用docker 開始 rocket chat!!</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-02-20 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-02-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://jamesblockk.github.io/banners/k8s.png)" alt="Hugo automatically deploy makefile" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/k8s">
+                        k8s
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" class="title">使用minikube 玩轉 k8s</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-02-18 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-02-18</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://jamesblockk.github.io/banners/hugo.png)" alt="Hugo automatically deploy makefile" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://jamesblockk.github.io/categories/hugo">
+                        hugo
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/" class="title">Hugo automatically deploy makefile</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-01-11 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-01-11</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
 </div>
 
 
-                
-<div id="sidebar" class="pure-u-1 pure-u-md-1-4 pure-u-sm-1">
-    <div class="pad">
-        <a name="about"></a>
-        <h3>About Me</h3>
-        <div style="text-align: center;">
-            <img src="/img/author.png" alt="JamsBlocKK" class="pure-img" />
-            <p><em></em></p>
-        </div>
+    
 
-        <h3>Latest Articles</h3>
-        <div class="pure-menu pure-menu-open">
-            <ul class="pure-menu-list">
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2020/02/26/%E4%BD%BF%E7%94%A8-redis-%E5%BB%BA%E7%AB%8B-%E5%88%86%E4%BD%88%E5%BC%8F%E9%8E%96/" class="pure-menu-link">使用 redis 建立 分佈式鎖<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/" class="pure-menu-link">使用 docker 常用指令大彙整<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/" class="pure-menu-link">使用 gomobile 來建立前端共同的核心物件<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/" class="pure-menu-link">使用docker 開始 rocket chat!!<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/" class="pure-menu-link">使用minikube 玩轉 k8s<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/" class="pure-menu-link">Hugo automatically deploy makefile<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/2019/01/10/hello-world/" class="pure-menu-link">Hello World<br>
-                        <small></small>
-                    </a>
-                </li>
-                
-                <li class="pure-menu-item">
-                    <a href="https://jamesblockk.github.io/1/01/01/" class="pure-menu-link"><br>
-                        <small></small>
-                    </a>
-                </li>
-                
-            </ul>
-        </div>
 
-        <h3>Categories</h3>
-        <div style="text-align:center">
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
             
-            
-            <button href="/tags/docker" class="pure-button pure-button-primary"> docker
-                <small>(2)</small></button>
-            
-            
-            
-            <button href="/tags/golang" class="pure-button pure-button-primary"> golang
-                <small>(2)</small></button>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </div>
-    </div> 
-</div> 
-
+            <li class="category-list-item">
                 
-            </div><div class="pure-g">
-	<footer class="pure-u-1 pure-u-md-1 pure-u-sm-1">
-		<p>This page and its contents are copyright &copy; 2020,
-			<a href="">JamsBlocKK</a>.</p>
-		<p><a href="https://github.com/pravin/hugo-theme-prav">Theme Prav</a> by <a href="https://cto.me.uk">Pravin
-				Paratey</a></p>
-	</footer>
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/docker">
+                    docker
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/golang">
+                    golang
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/k8s">
+                    k8s
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/rocket.chat">
+                    rocket.chat
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/categories/smalltalk">
+                    smalltalk
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
 
-	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
-		integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
-		crossorigin="anonymous"></script>
-</div></div>
-    </bod>
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/chat">
+                    chat
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/docker">
+                    docker
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/golang">
+                    golang
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/gomobile">
+                    gomobile
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/kubernetes">
+                    kubernetes
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/minikube">
+                    minikube
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/rocket.chat">
+                    rocket.chat
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/talk">
+                    talk
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://jamesblockk.github.io/tags/website">
+                    website
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://jamesblockk.github.io/tags/chat" style="font-size: 12px;">chat</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/docker" style="font-size: 12px;">docker</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/golang" style="font-size: 12px;">golang</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/gomobile" style="font-size: 12px;">gomobile</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/kubernetes" style="font-size: 12px;">kubernetes</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/minikube" style="font-size: 12px;">minikube</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/rocket.chat" style="font-size: 12px;">rocket.chat</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/talk" style="font-size: 12px;">talk</a>
+        
+        
+        <a href="https://jamesblockk.github.io/tags/website" style="font-size: 12px;">website</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://jamesblockk.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://jamesblockk.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
 </html>

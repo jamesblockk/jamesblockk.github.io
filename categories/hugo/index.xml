@@ -6,11 +6,7 @@
     <description>Recent content in hugo on JamsBlocKK</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate>
-    
-	<atom:link href="https://jamesblockk.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo automatically deploy makefile</title>
       <link>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</link>
