@@ -9,19 +9,19 @@
     <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 redis 建立 分佈式鎖</title>
-      <link>https://jamesblockk.github.io/post/be-development/golang/lock/</link>
+      <link>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/be-development/golang/lock/</guid>
+      <guid>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</guid>
       <description></description>
     </item>
     
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>
-      <link>https://jamesblockk.github.io/post/fe-development/golang/gomobile/</link>
+      <link>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/fe-development/golang/gomobile/</guid>
+      <guid>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</guid>
       <description>&lt;p&gt;同一個相同核心 用相同語言去完成
 可以減少許多維護的成本&lt;/p&gt;</description>
     </item>

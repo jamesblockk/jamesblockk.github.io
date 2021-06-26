@@ -9,19 +9,19 @@
     <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 docker 常用指令大彙整</title>
-      <link>https://jamesblockk.github.io/post/operations/container/docker-inffo/</link>
+      <link>https://jamesblockk.github.io/post/2019-07-24-operations-docker-inffo/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/operations/container/docker-inffo/</guid>
+      <guid>https://jamesblockk.github.io/post/2019-07-24-operations-docker-inffo/</guid>
       <description>&lt;p&gt;容器化 docker  時代&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用docker 開始 rocket chat!!</title>
-      <link>https://jamesblockk.github.io/post/operations/service/rocketchat/</link>
+      <link>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/operations/service/rocketchat/</guid>
+      <guid>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
     

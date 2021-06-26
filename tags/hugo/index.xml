@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo automatically deploy makefile</title>
-      <link>https://jamesblockk.github.io/post/operations/script/hugo-deploy/</link>
+      <link>https://jamesblockk.github.io/post/2019-01-11-operations-hugo-deploy/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/operations/script/hugo-deploy/</guid>
+      <guid>https://jamesblockk.github.io/post/2019-01-11-operations-hugo-deploy/</guid>
       <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;
 &lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈
 makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
