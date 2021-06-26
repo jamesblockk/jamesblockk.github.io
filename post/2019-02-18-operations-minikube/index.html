@@ -217,49 +217,37 @@
                 <p>local 端的 單點 node  k8s 入門工具</p>
 <p>macOS 使用方法</p>
 <p><a href="https://www.virtualbox.org/">下載 virtual machine</a></p>
-<pre><code>// 安裝 今天的主角
-$brew cask install minikube
-
-// 安裝 k8s 的 cli 工具
-$brew install kubectl
-</code></pre>
-<hr>
+<p>安裝 今天的主角</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew cask install minikube
+</code></pre></div><p>安裝 k8s 的 cli 工具</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew install kubectl
+</code></pre></div><hr>
 <p>開啟minikube 啟動 Kubernetes cluster</p>
-<pre><code>$minikube start
-</code></pre>
-<p>查看 minikube 狀態</p>
-<pre><code>$minikube status
-</code></pre>
-<p>使用圖形化介面 minikube</p>
-<pre><code>$minikube dashboard
-</code></pre>
-<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ minikube start
+</code></pre></div><p>查看 minikube 狀態</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ minikube status
+</code></pre></div><p>使用圖形化介面 minikube</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ minikube dashboard
+</code></pre></div><hr>
 <p>k8s 狀態</p>
-<pre><code>$kubectl cluster-info
-</code></pre>
-<p>部署應用</p>
-<pre><code>$kubectl run $(APP-NAME) --image=docker.APP-NAME.image:v1 --port 3000
-</code></pre>
-<p>已啟動的應用</p>
-<pre><code>$kubectl get pods
-</code></pre>
-<p>對外公開應用</p>
-<pre><code>$kubectl expose deployment APP-NAME --type=&quot;NodePort&quot; --port 3000
-</code></pre>
-<p>取得 service 列表</p>
-<pre><code>$kubectl get services
-</code></pre>
-<p>取得service url</p>
-<pre><code>$minikube service APP-NAME --url
-</code></pre>
-<hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl cluster-info
+</code></pre></div><p>部署應用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl run <span style="color:#66d9ef">$(</span>APP-NAME<span style="color:#66d9ef">)</span> --image<span style="color:#f92672">=</span>docker.APP-NAME.image:v1 --port <span style="color:#ae81ff">3000</span>
+</code></pre></div><p>已啟動的應用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl get pods
+</code></pre></div><p>對外公開應用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl expose deployment APP-NAME --type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;NodePort&#34;</span> --port <span style="color:#ae81ff">3000</span>
+</code></pre></div><p>取得 service 列表</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl get services
+</code></pre></div><p>取得service url</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ minikube service APP-NAME --url
+</code></pre></div><hr>
 <p>擴充應用</p>
 <p>查看deployments</p>
-<pre><code>$kubectl get deployments
-</code></pre>
-<p>修改副本數量</p>
-<pre><code>$kubectl scale APP-NAME --replicas=3
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl get deployments
+</code></pre></div><p>修改副本數量</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl scale APP-NAME --replicas<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
+</code></pre></div>
 
                 
 

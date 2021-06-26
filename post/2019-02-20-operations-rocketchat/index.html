@@ -226,25 +226,22 @@
 ＄cd Rocket.Chat
 </code></pre>
 <p>通過以下方式啟動mongodb服務器：</p>
-<pre><code>$docker-compose up -d mongo
-</code></pre>
-<p>第一次啟動mongo時，你還需要初始化它才能使用Rocket.Chat。確保mongo處於運行狀態，然後：</p>
-<pre><code>$docker-compose up -d mongo-init-replica
-</code></pre>
-<p>Mongo支持24 x 7操作和實時備份。您不需要太頻繁地重新啟動它。有關mongo服務器的正確操作和管理，請參閱 mongodb文檔。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker-compose up -d mongo
+</code></pre></div><p>第一次啟動mongo時，你還需要初始化它才能使用Rocket.Chat。確保mongo處於運行狀態，然後：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$docker-compose up -d mongo-init-replica
+</code></pre></div><p>Mongo支持24 x 7操作和實時備份。您不需要太頻繁地重新啟動它。有關mongo服務器的正確操作和管理，請參閱 mongodb文檔。</p>
 <p>一旦你確定mongodb啟動並運行：</p>
-<pre><code>$docker-compose up -d rocketchat
-</code></pre>
-<p>在瀏覽器中進入 localhost:3000 就可以看到畫面</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker-compose up -d rocketchat
+</code></pre></div><p>在瀏覽器中進入 localhost:3000 就可以看到畫面</p>
 <hr>
 <p>mongo</p>
 <p>進入 mongodb 中</p>
-<pre><code>$docker exec -it rocketchat_mongo_1 mongo  --authenticationDatabase admin
-</code></pre>
-<p>查看 db</p>
-<pre><code>$show dbs
-$use rocketchat
-$show collections</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$docker exec -it rocketchat_mongo_1 mongo  --authenticationDatabase admin
+</code></pre></div><p>查看 db</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mongo&gt; show dbs
+mongo&gt; use rocketchat
+mongo&gt; show collections
+</code></pre></div>
 
                 
 

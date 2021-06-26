@@ -223,18 +223,18 @@
 makefile 檔案 記得放在 website-hugo 的第一層</p>
 <p>之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了</p>
 <p>makefile 範例檔:</p>
-<pre><code>GITHUB_NAME = jamesblockk
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile">    GITHUB_NAME <span style="color:#f92672">=</span> jamesblockk
 
-deploy :
-    rm -rf public
-    git clone https://github.com/$(GITHUB_NAME)/$(GITHUB_NAME).github.io.git
-    mv $(GITHUB_NAME).github.io public
-    hugo
-    cd public/ &amp;&amp; git add . 
-    cd public/ &amp;&amp; git commit -m &quot;[ToDo] update&quot; 
-    cd public/ &amp;&amp; git push 
-</code></pre>
-<p>附上github 檔案位置 <a href="https://github.com/jamesblockk/quick/blob/master/hugo/makefile">https://github.com/jamesblockk/quick/blob/master/hugo/makefile</a></p>
+    deploy :
+        rm -rf public
+        git clone https://github.com/<span style="color:#66d9ef">$(</span>GITHUB_NAME<span style="color:#66d9ef">)</span>/<span style="color:#66d9ef">$(</span>GITHUB_NAME<span style="color:#66d9ef">)</span>.github.io.git
+        mv <span style="color:#66d9ef">$(</span>GITHUB_NAME<span style="color:#66d9ef">)</span>.github.io public
+        hugo
+        cd public/ <span style="color:#f92672">&amp;&amp;</span> git add . 
+        cd public/ <span style="color:#f92672">&amp;&amp;</span> git commit -m <span style="color:#e6db74">&#34;[ToDo] update&#34;</span> 
+        cd public/ <span style="color:#f92672">&amp;&amp;</span> git push 
+
+</code></pre></div><p>附上github 檔案位置 <!-- raw HTML omitted --><a href="https://github.com/jamesblockk/quick/blob/master/hugo/makefile">https://github.com/jamesblockk/quick/blob/master/hugo/makefile</a></p>
 
                 
 
