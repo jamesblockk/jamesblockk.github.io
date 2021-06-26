@@ -6,17 +6,13 @@
     <description>Recent content in service on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 21:49:20 +0200</lastBuildDate>
-    
-	<atom:link href="https://jamesblockk.github.io/categories/service/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 20 Feb 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/service/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用docker 開始 rocket chat!!</title>
-      <link>https://jamesblockk.github.io/post/service/rocketchat/</link>
+      <link>https://jamesblockk.github.io/post/operations/service/rocketchat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/post/service/rocketchat/</guid>
+      <guid>https://jamesblockk.github.io/post/operations/service/rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
     

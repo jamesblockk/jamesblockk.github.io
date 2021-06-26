@@ -1,63 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on JamsBlocKK</title>
+    <title>Categories on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/categories/</link>
-    <description>Recent content in Categories on JamsBlocKK</description>
+    <description>Recent content in Categories on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>docker</title>
-      <link>https://jamesblockk.github.io/categories/docker/</link>
-      <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
+      <title>cicd</title>
+      <link>https://jamesblockk.github.io/categories/cicd/</link>
+      <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/docker/</guid>
+      <guid>https://jamesblockk.github.io/categories/cicd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
       <link>https://jamesblockk.github.io/categories/golang/</link>
-      <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
+      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
       
       <guid>https://jamesblockk.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>rocket.chat</title>
-      <link>https://jamesblockk.github.io/categories/rocket.chat/</link>
+      <title>container</title>
+      <link>https://jamesblockk.github.io/categories/container/</link>
+      <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/categories/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operations</title>
+      <link>https://jamesblockk.github.io/categories/operations/</link>
+      <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/categories/operations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service</title>
+      <link>https://jamesblockk.github.io/categories/service/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/rocket.chat/</guid>
+      <guid>https://jamesblockk.github.io/categories/service/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>k8s</title>
-      <link>https://jamesblockk.github.io/categories/k8s/</link>
+      <title>kubernetes</title>
+      <link>https://jamesblockk.github.io/categories/kubernetes/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/k8s/</guid>
+      <guid>https://jamesblockk.github.io/categories/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://jamesblockk.github.io/categories/hugo/</link>
-      <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
+      <title>minikube</title>
+      <link>https://jamesblockk.github.io/categories/minikube/</link>
+      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/hugo/</guid>
+      <guid>https://jamesblockk.github.io/categories/minikube/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>smalltalk</title>
-      <link>https://jamesblockk.github.io/categories/smalltalk/</link>
+      <title>life</title>
+      <link>https://jamesblockk.github.io/categories/life/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/smalltalk/</guid>
+      <guid>https://jamesblockk.github.io/categories/life/</guid>
       <description></description>
     </item>
     

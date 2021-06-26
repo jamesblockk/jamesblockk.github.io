@@ -2,79 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jamesblockk.github.io/post/operations/kubernetes/ingress/ingress-traefik/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
     <loc>https://jamesblockk.github.io/categories/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/categories/cicd/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/ingress/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/kubernetes/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/post/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/</loc>
+    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/post/operations/kubernetes/ingress/ingress-nginx/</loc>
+    <lastmod>2020-03-24T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/go-redis/</loc>
+    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/golang/</loc>
+    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/categories/golang/</loc>
+    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/lock/</loc>
+    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/redis/</loc>
+    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/post/be-development/golang/lock/</loc>
+    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/categories/container/</loc>
     <lastmod>2019-07-24T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/docker/</loc>
     <lastmod>2019-07-24T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/docker/</loc>
+    <loc>https://jamesblockk.github.io/categories/operations/</loc>
     <lastmod>2019-07-24T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/</loc>
+    <loc>https://jamesblockk.github.io/post/operations/container/docker-inffo/</loc>
     <lastmod>2019-07-24T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/post/</loc>
-    <lastmod>2019-07-24T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/tags/</loc>
-    <lastmod>2019-07-24T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</loc>
-    <lastmod>2019-07-24T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/tags/golang/</loc>
-    <lastmod>2019-03-17T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/categories/golang/</loc>
-    <lastmod>2019-03-17T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/gomobile/</loc>
     <lastmod>2019-03-17T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/2019/03/17/%E4%BD%BF%E7%94%A8-gomobile-%E4%BE%86%E5%BB%BA%E7%AB%8B%E5%89%8D%E7%AB%AF%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B8%E5%BF%83%E7%89%A9%E4%BB%B6/</loc>
+    <loc>https://jamesblockk.github.io/post/fe-development/golang/gomobile/</loc>
     <lastmod>2019-03-17T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/2019/02/20/%E4%BD%BF%E7%94%A8docker-%E9%96%8B%E5%A7%8B-rocket-chat/</loc>
+    <loc>https://jamesblockk.github.io/post/operations/service/rocketchat/</loc>
     <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/chat/</loc>
     <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/tags/rocket.chat/</loc>
+    <loc>https://jamesblockk.github.io/categories/service/</loc>
     <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/rocket.chat/</loc>
-    <lastmod>2019-02-20T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/2019/02/18/%E4%BD%BF%E7%94%A8minikube-%E7%8E%A9%E8%BD%89-k8s/</loc>
+    <loc>https://jamesblockk.github.io/post/operations/kubernetes/minikube/minikube/</loc>
     <lastmod>2019-02-18T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/k8s/</loc>
+    <loc>https://jamesblockk.github.io/categories/kubernetes/</loc>
     <lastmod>2019-02-18T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/tags/kubernetes/</loc>
-    <lastmod>2019-02-18T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/tags/minikube/</loc>
+    <loc>https://jamesblockk.github.io/categories/minikube/</loc>
     <lastmod>2019-02-18T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/hugo/</loc>
     <lastmod>2019-01-11T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/hugo/</loc>
-    <lastmod>2019-01-11T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/2019/01/11/hugo-automatically-deploy-makefile/</loc>
+    <loc>https://jamesblockk.github.io/post/operations/script/hugo-deploy/</loc>
     <lastmod>2019-01-11T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/website/</loc>
     <lastmod>2019-01-11T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/2019/01/10/hello-world/</loc>
+    <loc>https://jamesblockk.github.io/post/helloworld/</loc>
     <lastmod>2019-01-10T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/smalltalk/</loc>
+    <loc>https://jamesblockk.github.io/categories/life/</loc>
     <lastmod>2019-01-10T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/talk/</loc>
@@ -82,7 +103,5 @@
   </url><url>
     <loc>https://jamesblockk.github.io/about/</loc>
     <lastmod>2018-01-10T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/1/01/01/</loc>
   </url>
 </urlset>

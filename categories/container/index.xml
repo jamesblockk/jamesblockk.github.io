@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Container on JamsBlocKK</title>
+    <title>container on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/categories/container/</link>
-    <description>Recent content in Container on JamsBlocKK</description>
+    <description>Recent content in container on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-tw</language>
-    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate>
-    
-	<atom:link href="https://jamesblockk.github.io/categories/container/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/container/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 docker 常用指令大彙整</title>
-      <link>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</link>
+      <link>https://jamesblockk.github.io/post/operations/container/docker-inffo/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/2019/07/24/%E4%BD%BF%E7%94%A8-docker-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E5%A4%A7%E5%BD%99%E6%95%B4/</guid>
-      <description>&lt;p&gt;容器化 docker 的 docker 時代&lt;/p&gt;</description>
+      <guid>https://jamesblockk.github.io/post/operations/container/docker-inffo/</guid>
+      <description>&lt;p&gt;容器化 docker  時代&lt;/p&gt;</description>
     </item>
     
   </channel>

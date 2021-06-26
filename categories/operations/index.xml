@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on JamsBlocKK Blog</title>
-    <link>https://jamesblockk.github.io/tags/docker/</link>
-    <description>Recent content in docker on JamsBlocKK Blog</description>
+    <title>operations on JamsBlocKK Blog</title>
+    <link>https://jamesblockk.github.io/categories/operations/</link>
+    <description>Recent content in operations on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/operations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 docker 常用指令大彙整</title>
       <link>https://jamesblockk.github.io/post/operations/container/docker-inffo/</link>
@@ -23,6 +23,15 @@
       
       <guid>https://jamesblockk.github.io/post/operations/service/rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用minikube 玩轉 k8s</title>
+      <link>https://jamesblockk.github.io/post/operations/kubernetes/minikube/minikube/</link>
+      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/post/operations/kubernetes/minikube/minikube/</guid>
+      <description>&lt;p&gt;local 端的 單點 node  k8s 入門工具&lt;/p&gt;</description>
     </item>
     
   </channel>
