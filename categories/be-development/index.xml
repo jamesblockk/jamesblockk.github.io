@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>be-development on JamsBlocKK Blog</title>
+    <link>https://jamesblockk.github.io/categories/be-development/</link>
+    <description>Recent content in be-development on JamsBlocKK Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/be-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 redis 建立 分佈式鎖</title>
+      <link>https://jamesblockk.github.io/post/be-development/golang/lock/</link>
+      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
+      
+      <guid>https://jamesblockk.github.io/post/be-development/golang/lock/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,74 +8,38 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>cicd</title>
-      <link>https://jamesblockk.github.io/categories/cicd/</link>
-      <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/cicd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://jamesblockk.github.io/categories/golang/</link>
-      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>container</title>
-      <link>https://jamesblockk.github.io/categories/container/</link>
-      <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/container/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>operations</title>
       <link>https://jamesblockk.github.io/categories/operations/</link>
-      <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
+      <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
       
       <guid>https://jamesblockk.github.io/categories/operations/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>service</title>
-      <link>https://jamesblockk.github.io/categories/service/</link>
-      <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
+      <title>be-development</title>
+      <link>https://jamesblockk.github.io/categories/be-development/</link>
+      <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/service/</guid>
+      <guid>https://jamesblockk.github.io/categories/be-development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>kubernetes</title>
-      <link>https://jamesblockk.github.io/categories/kubernetes/</link>
-      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
+      <title>fe-development</title>
+      <link>https://jamesblockk.github.io/categories/fe-development/</link>
+      <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/kubernetes/</guid>
+      <guid>https://jamesblockk.github.io/categories/fe-development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>minikube</title>
-      <link>https://jamesblockk.github.io/categories/minikube/</link>
-      <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
-      
-      <guid>https://jamesblockk.github.io/categories/minikube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>https://jamesblockk.github.io/categories/life/</link>
+      <title>smalltalk</title>
+      <link>https://jamesblockk.github.io/categories/smalltalk/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
       
-      <guid>https://jamesblockk.github.io/categories/life/</guid>
+      <guid>https://jamesblockk.github.io/categories/smalltalk/</guid>
       <description></description>
     </item>
     
