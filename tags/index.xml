@@ -6,114 +6,91 @@
     <description>Recent content in Tags on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ingress</title>
+      <title>Ingress</title>
       <link>https://jamesblockk.github.io/tags/ingress/</link>
       <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/ingress/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kubernetes</title>
+      <title>Kubernetes</title>
       <link>https://jamesblockk.github.io/tags/kubernetes/</link>
       <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>go-redis</title>
+      <title>Go-Redis</title>
       <link>https://jamesblockk.github.io/tags/go-redis/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/go-redis/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>golang</title>
+      <title>Golang</title>
       <link>https://jamesblockk.github.io/tags/golang/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/golang/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>lock</title>
+      <title>Lock</title>
       <link>https://jamesblockk.github.io/tags/lock/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/lock/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>redis</title>
+      <title>Redis</title>
       <link>https://jamesblockk.github.io/tags/redis/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/redis/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>docker</title>
+      <title>Docker</title>
       <link>https://jamesblockk.github.io/tags/docker/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>gomobile</title>
+      <title>Gomobile</title>
       <link>https://jamesblockk.github.io/tags/gomobile/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/gomobile/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>chat</title>
+      <title>Chat</title>
       <link>https://jamesblockk.github.io/tags/chat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/chat/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://jamesblockk.github.io/tags/hugo/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>website</title>
+      <title>Website</title>
       <link>https://jamesblockk.github.io/tags/website/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/website/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>talk</title>
+      <title>Talk</title>
       <link>https://jamesblockk.github.io/tags/talk/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/tags/talk/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

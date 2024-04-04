@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>redis on JamsBlocKK Blog</title>
+    <title>Redis on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/tags/redis/</link>
-    <description>Recent content in redis on JamsBlocKK Blog</description>
+    <description>Recent content in Redis on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 redis 建立 分佈式鎖</title>
       <link>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</guid>
-      <description></description>
+      <description>引入套件 import &amp;quot;github.com/jamesblockk/rdslock&amp;quot; 使用 url 初始化 rdslock.InitURL(&amp;quot;redis://127.0.0.1:6379&amp;quot;) 使用已有連線 初始化 rdslock client := redis.NewClient(&amp;amp;redis.Options{ Addr: &amp;quot;127.0.0.1:6379&amp;quot;, Password: &amp;quot;&amp;quot;, DB: 0, }) rdslock.InitAssigned(client) 在分佈式系統 執行一次的作法 const key = &amp;quot;LOCK_TEST_KEY&amp;quot; err := rdslock.Lock(key, 5 * time.Second ) if err != nil { println(err.Error()) return } println(&amp;quot;lock success ... &amp;quot;)</description>
     </item>
-    
   </channel>
 </rss>

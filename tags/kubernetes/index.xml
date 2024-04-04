@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kubernetes on JamsBlocKK Blog</title>
+    <title>Kubernetes on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/tags/kubernetes/</link>
-    <description>Recent content in kubernetes on JamsBlocKK Blog</description>
+    <description>Recent content in Kubernetes on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ingree controller - traefik</title>
+      <title>ingree controller - traefik</title>
       <link>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</link>
       <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</guid>
-      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;
-&lt;p&gt;快速建置 traefik ingress controller&lt;/p&gt;</description>
+      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;&#xA;&lt;p&gt;快速建置 traefik ingress controller &amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>ingree controller - nginx</title>
+      <title>ingree controller - nginx</title>
       <link>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-nginx/</link>
       <pubDate>Tue, 24 Mar 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-nginx/</guid>
-      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;</description>
+      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>使用minikube 玩轉 k8s</title>
+      <title>使用minikube 玩轉 k8s</title>
       <link>https://jamesblockk.github.io/post/2019-02-18-operations-minikube/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-02-18-operations-minikube/</guid>
       <description>&lt;p&gt;local 端的 單點 node  k8s 入門工具&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

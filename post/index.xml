@@ -6,92 +6,70 @@
     <description>Recent content in Posts on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ingree controller - traefik</title>
+      <title>ingree controller - traefik</title>
       <link>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</link>
       <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</guid>
-      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;
-&lt;p&gt;快速建置 traefik ingress controller&lt;/p&gt;</description>
+      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;&#xA;&lt;p&gt;快速建置 traefik ingress controller &amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>ingree controller - nginx</title>
+      <title>ingree controller - nginx</title>
       <link>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-nginx/</link>
       <pubDate>Tue, 24 Mar 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-nginx/</guid>
-      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;</description>
+      <description>&lt;p&gt;外部使用 k8s 建置好的服務&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>使用 redis 建立 分佈式鎖</title>
       <link>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</guid>
-      <description></description>
+      <description>引入套件 import &amp;quot;github.com/jamesblockk/rdslock&amp;quot; 使用 url 初始化 rdslock.InitURL(&amp;quot;redis://127.0.0.1:6379&amp;quot;) 使用已有連線 初始化 rdslock client := redis.NewClient(&amp;amp;redis.Options{ Addr: &amp;quot;127.0.0.1:6379&amp;quot;, Password: &amp;quot;&amp;quot;, DB: 0, }) rdslock.InitAssigned(client) 在分佈式系統 執行一次的作法 const key = &amp;quot;LOCK_TEST_KEY&amp;quot; err := rdslock.Lock(key, 5 * time.Second ) if err != nil { println(err.Error()) return } println(&amp;quot;lock success ... &amp;quot;)</description>
     </item>
-    
     <item>
       <title>使用 docker 常用指令大彙整</title>
       <link>https://jamesblockk.github.io/post/2019-07-24-operations-docker-inffo/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-07-24-operations-docker-inffo/</guid>
       <description>&lt;p&gt;容器化 docker  時代&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>
       <link>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</guid>
-      <description>&lt;p&gt;同一個相同核心 用相同語言去完成
-可以減少許多維護的成本&lt;/p&gt;</description>
+      <description>&lt;p&gt;同一個相同核心 用相同語言去完成&#xA;可以減少許多維護的成本&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>使用docker 開始 rocket chat!!</title>
+      <title>使用docker 開始 rocket chat!!</title>
       <link>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>使用minikube 玩轉 k8s</title>
+      <title>使用minikube 玩轉 k8s</title>
       <link>https://jamesblockk.github.io/post/2019-02-18-operations-minikube/</link>
       <pubDate>Mon, 18 Feb 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-02-18-operations-minikube/</guid>
       <description>&lt;p&gt;local 端的 單點 node  k8s 入門工具&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugo automatically deploy makefile</title>
       <link>https://jamesblockk.github.io/post/2019-01-11-operations-hugo-deploy/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-01-11-operations-hugo-deploy/</guid>
-      <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;
-&lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈
-makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
-&lt;p&gt;之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了&lt;/p&gt;</description>
+      <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;&#xA;&lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈&#xA;makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;&#xA;&lt;p&gt;之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hello World</title>
       <link>https://jamesblockk.github.io/post/2019-01-10-hello-world/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-01-10-hello-world/</guid>
       <description>Hello World !!~~ :)))</description>
     </item>
-    
   </channel>
 </rss>

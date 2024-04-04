@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>website on JamsBlocKK Blog</title>
+    <title>Website on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/tags/website/</link>
-    <description>Recent content in website on JamsBlocKK Blog</description>
+    <description>Recent content in Website on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jan 2019 21:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo automatically deploy makefile</title>
       <link>https://jamesblockk.github.io/post/2019-01-11-operations-hugo-deploy/</link>
       <pubDate>Fri, 11 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-01-11-operations-hugo-deploy/</guid>
-      <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;
-&lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈
-makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;
-&lt;p&gt;之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了&lt;/p&gt;</description>
+      <description>&lt;p&gt;hugo website 要發佈到github 總是很麻煩&lt;/p&gt;&#xA;&lt;p&gt;來使用 makefile 簡易寫一個scipt的發佈&#xA;makefile 檔案 記得放在 website-hugo 的第一層&lt;/p&gt;&#xA;&lt;p&gt;之後開始寫 blog 只要輕鬆的 make deploy 就可以快速發佈了&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

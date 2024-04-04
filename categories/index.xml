@@ -6,42 +6,35 @@
     <description>Recent content in Categories on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Mar 2020 22:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>operations</title>
+      <title>Operations</title>
       <link>https://jamesblockk.github.io/categories/operations/</link>
       <pubDate>Tue, 24 Mar 2020 22:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/categories/operations/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>be-development</title>
+      <title>Be-Development</title>
       <link>https://jamesblockk.github.io/categories/be-development/</link>
       <pubDate>Wed, 26 Feb 2020 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/categories/be-development/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>fe-development</title>
+      <title>Fe-Development</title>
       <link>https://jamesblockk.github.io/categories/fe-development/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/categories/fe-development/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>talk</title>
+      <title>Talk</title>
       <link>https://jamesblockk.github.io/categories/talk/</link>
       <pubDate>Thu, 10 Jan 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/categories/talk/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

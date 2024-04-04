@@ -10,8 +10,8 @@
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="https://jamesblockk.github.io/img/home-bg-jeep.jpg">
-    <meta property="twitter:image" content="https://jamesblockk.github.io/img/home-bg-jeep.jpg" />
+    <meta property="og:image" content="https://jamesblockk.github.io//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://jamesblockk.github.io//img/home-bg-jeep.jpg" />
     
 
     
@@ -34,28 +34,27 @@
     <meta name="keyword"  content="golang, PaaS, docker, Kubernetes, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Tags-JamesBlockk Blog</title>
+    <title>Tags | JamesBlockk Blog</title>
 
     <link rel="canonical" href="/tags/">
 
-    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
-
+    
+    
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
 
     
     <link rel="stylesheet" href="/css/zanshang.css">
 
     
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
 
     
     
 
-    
     
     <script src="/js/jquery.min.js"></script>
 
@@ -66,13 +65,20 @@
     <script src="/js/hux-blog.min.js"></script>
 
     
+    <script src="/js/lazysizes.min.js"></script>
+
+    
     
 
 </head>
 
 
 
+
+
+
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
     <div class="container-fluid">
         
         <div class="navbar-header page-scroll">
@@ -91,35 +97,32 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">All Posts</a>
                     </li>
                     
                         
                         <li>
-                            <a href="/categories/be-development">be-development</a>
+                            <a href="/categories/be-development/">be-development</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/fe-development">fe-development</a>
+                            <a href="/categories/fe-development/">fe-development</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/operations">operations</a>
+                            <a href="/categories/operations/">operations</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/talk">talk</a>
+                            <a href="/categories/talk/">talk</a>
                         </li>
                         
                     
                     
 		    
-
-                    
-		    <li>
-                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
-		    </li>
-                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
                 </ul>
             </div>
         </div>
@@ -186,7 +189,7 @@
 
          	
                 
-<div id="disqus-comment"></div>
+
 
 
 
@@ -263,8 +266,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                   
+                <ul class="list-inline text-center">                  
                     
                     <li>
                         <a href="mailto:jamesblockk@gmail.com">
@@ -274,15 +276,13 @@
                             </span>
                         </a>
                     </li>
-		    
-
+		           
                     
                     
                     
-
                     
 
-		    
+		            
                     
                     
                     <li>
@@ -293,7 +293,8 @@
                             </span>
                         </a>
                     </li>
-		    
+		            
+                    
                     
                     
                     
@@ -305,16 +306,11 @@
             
             
             
-                </ul>
+           
+             </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; JamsBlocKK Blog 2021
-                    <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
-                    </iframe>
+                    Copyright &copy; JamsBlocKK Blog 2024
+                    
                 </p>
             </div>
         </div>
@@ -325,7 +321,7 @@
 
 
 <script>
-    function async(u, c) {
+    function loadAsync(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
@@ -343,7 +339,7 @@
 <script>
     
     if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+        loadAsync("/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -355,10 +351,72 @@
 
 
 <script>
-    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
 </script>
 
 

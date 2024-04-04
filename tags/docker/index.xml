@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on JamsBlocKK Blog</title>
+    <title>Docker on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/tags/docker/</link>
-    <description>Recent content in docker on JamsBlocKK Blog</description>
+    <description>Recent content in Docker on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jul 2019 21:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 docker 常用指令大彙整</title>
       <link>https://jamesblockk.github.io/post/2019-07-24-operations-docker-inffo/</link>
       <pubDate>Wed, 24 Jul 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-07-24-operations-docker-inffo/</guid>
       <description>&lt;p&gt;容器化 docker  時代&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>使用docker 開始 rocket chat!!</title>
+      <title>使用docker 開始 rocket chat!!</title>
       <link>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</link>
       <pubDate>Wed, 20 Feb 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</guid>
       <description>&lt;p&gt;rocket chat start&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

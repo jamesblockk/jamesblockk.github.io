@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fe-development on JamsBlocKK Blog</title>
+    <title>Fe-Development on JamsBlocKK Blog</title>
     <link>https://jamesblockk.github.io/categories/fe-development/</link>
-    <description>Recent content in fe-development on JamsBlocKK Blog</description>
+    <description>Recent content in Fe-Development on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 21:49:20 +0200</lastBuildDate><atom:link href="https://jamesblockk.github.io/categories/fe-development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Mar 2019 21:49:20 +0200</lastBuildDate>
+    <atom:link href="https://jamesblockk.github.io/categories/fe-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 gomobile 來建立前端共同的核心物件</title>
       <link>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</link>
       <pubDate>Sun, 17 Mar 2019 21:49:20 +0200</pubDate>
-      
       <guid>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</guid>
-      <description>&lt;p&gt;同一個相同核心 用相同語言去完成
-可以減少許多維護的成本&lt;/p&gt;</description>
+      <description>&lt;p&gt;同一個相同核心 用相同語言去完成&#xA;可以減少許多維護的成本&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
