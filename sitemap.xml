@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</loc>
+    <loc>https://jamesblockk.github.io/categories/</loc>
     <lastmod>2020-03-24T22:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/</loc>
+    <loc>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</loc>
     <lastmod>2020-03-24T22:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/ingress/</loc>
@@ -62,10 +62,10 @@
     <loc>https://jamesblockk.github.io/post/2019-03-17-development-gomobile/</loc>
     <lastmod>2019-03-17T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</loc>
+    <loc>https://jamesblockk.github.io/tags/chat/</loc>
     <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/tags/chat/</loc>
+    <loc>https://jamesblockk.github.io/post/2019-02-20-operations-rocketchat/</loc>
     <lastmod>2019-02-20T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/post/2019-02-18-operations-minikube/</loc>
