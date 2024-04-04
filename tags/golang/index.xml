@@ -6,8 +6,15 @@
     <description>Recent content in Golang on JamsBlocKK Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jamesblockk.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang Context 詳解</title>
+      <link>https://jamesblockk.github.io/post/2024-04-04-development-golang-context/</link>
+      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://jamesblockk.github.io/post/2024-04-04-development-golang-context/</guid>
+      <description></description>
+    </item>
     <item>
       <title>使用 redis 建立 分佈式鎖</title>
       <link>https://jamesblockk.github.io/post/2020-02-26-development-global-redis-lock/</link>

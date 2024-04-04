@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jamesblockk.github.io/categories/be-development/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jamesblockk.github.io/categories/</loc>
-    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/context/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/golang/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/post/2024-04-04-development-golang-context/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/post/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jamesblockk.github.io/tags/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-traefik/</loc>
     <lastmod>2020-03-24T22:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/ingress/</loc>
-    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/</loc>
     <lastmod>2020-03-24T22:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/kubernetes/</loc>
@@ -20,22 +38,10 @@
     <loc>https://jamesblockk.github.io/categories/operations/</loc>
     <lastmod>2020-03-24T22:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/post/</loc>
-    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/tags/</loc>
-    <lastmod>2020-03-24T22:49:20+02:00</lastmod>
-  </url><url>
     <loc>https://jamesblockk.github.io/post/2020-03-24-operations-ingress-nginx/</loc>
     <lastmod>2020-03-24T21:49:20+02:00</lastmod>
   </url><url>
-    <loc>https://jamesblockk.github.io/categories/be-development/</loc>
-    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
-  </url><url>
     <loc>https://jamesblockk.github.io/tags/go-redis/</loc>
-    <lastmod>2020-02-26T21:49:20+02:00</lastmod>
-  </url><url>
-    <loc>https://jamesblockk.github.io/tags/golang/</loc>
     <lastmod>2020-02-26T21:49:20+02:00</lastmod>
   </url><url>
     <loc>https://jamesblockk.github.io/tags/lock/</loc>
